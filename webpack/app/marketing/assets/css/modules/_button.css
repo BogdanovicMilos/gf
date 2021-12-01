@@ -1,0 +1,44 @@
+.btn {
+  display: inline-flex;
+  display: inline-flexbox;
+  display: inline-flex;
+  align-items: center;
+  flex-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-pack: center;
+  justify-content: center;
+  padding: 0 32px;
+  border-radius: 4px;
+  height: 56px;
+  font-size: 20px;
+  font-family: "RNSPhysis", sans-serif;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.btn-main {
+  background: linear-gradient(56.83deg, #234dae 8.11%, #347bce 90.67%);
+  background-size: 100% 100%;
+  color: #fff;
+  transition: background-size 0.35s ease;
+}
+
+.btn-main:hover {
+  color: #fff;
+  background-size: 250% 100%;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #304f95;
+}
+
+.btn-dark {
+  background-color: #343b43;
+  color: #fff;
+}
+
+.btn-dark:hover {
+  color: #fff;
+}

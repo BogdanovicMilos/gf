@@ -1,0 +1,237 @@
+{% extends 'marketing/base/base.html' %}
+
+{% load static %}
+
+{% block meta %}
+    <title>Facebook Advertising For Any Sized Business. | growthfoundry.com</title>
+    <meta name="description" content="We are Facebook Advertising experts and have managed tens of millions of dollars in Facebook ad spend.">
+{% endblock %}
+
+{% block body %}
+
+    {% include 'marketing/includes/header.html' %}
+
+    <div class="container" data-aos="fade" data-aos-delay="700">
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li>Facebook Ads Agency</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="service_intro">
+        <div class="container">
+            <div class="service_intro__grid service_intro__grid--align_top">
+            <h2 class="section_title service_intro__title" data-da=".service_intro__title-pc, 1024"  data-aos="fade-up" data-aos-delay="100">
+                Facebook Ads Agency
+            </h2>
+            <div class="service_intro__img" data-aos="fade" data-aos-delay="400">
+                <img src="{% static "marketing/img/content/facebook_agency.svg" %}" alt="">
+            </div>
+            <div class="service_intro__text">
+                <div class="service_intro__title-pc"></div>
+                <div class="section_subtitle" data-aos="fade-up" data-aos-delay="150">
+                    Facebook Ads Management and Advertising Focused on ROI
+                </div>
+                <div class="richtext" data-aos="fade-up" data-aos-delay="200">
+                    <p>Our multi-billion dollar in net worth clientele relies on the high-performance output of Growth Foundry’s enterprise Ads team. Our strategy for large scale campaigns lies in our ability to rapidly deploy Ads changes, split tests, and optimizations</p>
+                </div>
+                <div class="d-pc">
+                    <div class="service_intro__btns" data-aos="fade-up" data-aos-delay="250">
+                        <a href="{% url 'get_in_touch' %}" class="btn btn-main">Get A Free Consultation Scheduled Today</a>
+                    </div>
+                </div>
+                <div class="d-mob">
+                    <div class="service_intro__btns" data-aos="fade-up" data-aos-delay="250">
+                        <a href="#" class="btn btn-main">Get A Free Consultation</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_clients">
+        <div class="container">
+            <h2 class="section_title" data-aos="fade-up" data-aos-delay="100">
+                Some past and present clients
+            </h2>
+            <div class="service_clients__subtitle" data-aos="fade-up" data-aos-delay="150">
+                No budget is too big (but some may be too small)
+            </div>
+            <div class="service_clients-slider" data-aos="fade" data-aos-delay="500">
+                <div class="service_clients-slider__list">
+                    <div class="service_clients-itm"><img src="{% static "marketing/img/content/clients/image14.png" %}" alt=""></div>
+                    <div class="service_clients-itm"><img src="{% static "marketing/img/content/clients/image17.png" %}" alt=""></div>
+                    <div class="service_clients-itm"><img src="{% static "marketing/img/content/clients/image15.png" %}" alt=""></div>
+                    <div class="service_clients-itm"><img src="{% static "marketing/img/content/clients/image18.png" %}" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_wide_article">
+        <div class="container">
+            <div class="service_wide_article__content">
+            <h2 class="section_title" data-aos="fade-up" data-aos-delay="100">
+                Our multiple billions of dollars in net worth clientele know Growth Foundry is the go to shop for a Facebook advertising strategy that brings in hundreds of millions of dollars in gross revenue
+            </h2>
+            <div class="service_wide_article__img" data-aos="fade" data-aos-delay="500">
+                <img src="{% static "marketing/img/content/image18.jpg" %}" alt="">
+                <div class="service_wide_article__img-label">
+                    Medical Facebook Ad Campaign
+                </div>
+                <img src="{% static "marketing/img/content/service_wide_article-before.svg" %}" alt="" class="service_wide_article__decor-before">
+                <img src="{% static "marketing/img/content/service_wide_article-after.svg" %}" alt="" class="service_wide_article__decor-after">
+            </div>
+            <div class="richtext" data-aos="fade-up" data-aos-delay="150">
+                <p>Our advertising process truly combines a scientific and empathetic approach coupled with years of data that helped us learn the algorithms that drive both paid and organic reach. Understanding the nuts and bolts, the mechanics of running ads is crucial but ensuring the congruence of your messaging across your marketing channels and its application to your customer avatar is what makes campaigns extraordinary.</p>
+                <p>The flexibility of Facebook’s many media buying opportunities allows us to inexpensively target our audience at all points of the AIDA (Attention, Interest, Desire, Action) funnel and convert them into profitable clients/customers for your brand.</p>
+                <p>We work on campaigns spending north of a million dollars per month on the Facebook platform alone. We have worked with clients to create true multi-touchpoint experiences leveraging ads, organic content, and even highly successful groups.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_industries">
+        <div class="container">
+            <h2 class="section_title" data-aos="fade-up" data-aos-delay="100">
+                We've Worked In Dozens Of Industries
+            </h2>
+            <div class="service_industries__row">
+                <div class="service_industries__img" data-aos="fade" data-aos-delay="500">
+                    <img src="{% static "marketing/img/content/image19.jpg" %}" alt="">
+                    <img src="{% static "marketing/img/content/service_industries-hex.svg" %}" alt="" class="service_industries__decor">
+                </div>
+                <div class="richtext" data-aos="fade-up" data-aos-delay="200">
+                    <p>Whether you are selling coaching and courses, bringing new users into your SaaS business, generating new cases for your law firm or patients for your health practice, we have run campaigns for a related or exact industry and have done so profitably.</p>
+                    <p>We will provide you with an unparalleled support system leveraging our expertise as well as being liaisons for your brand directly into Facebook personnel. Our proprietary 4x4 ad building strategy means we rapidly deploy ads and identify winning campaigns so your budget never bleeds and being unprofitable on your ad spend is never a concern.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_article">
+        <div class="container">
+            <div class="service_article__row service_article__row--reverse">
+                <h2 class="section_title service_article__title" data-da=".service_article__title-pc-02, 1024" data-aos="fade-up" data-aos-delay="100">
+                    Stay On Top With Our Reporting
+                </h2>
+                <div class="service_article__picture" data-aos="fade" data-aos-delay="500">
+                    <img src="{% static "marketing/img/content/image20.jpg" %}" alt="" class="service_article__picture-img">
+                </div>
+                <div class="service_article__text">
+                    <div class="service_article__title-pc-02"></div>
+                    <div class="richtext" data-aos="fade-up" data-aos-delay="200">
+                        <p>Access to our transparent and simple reporting and attribution platform will have your KPIs and ROI displayed neatly for perusal at your convenience and our dedicated media buying staff to answer any questions gives you the peace of mind to concentrate on your business while we scale your ad buying to the next level.</p>
+                        <p>Let us build you a Facebook marketing map and show you how we can navigate your brand to more growth than ever with a system that is tried and true, proven to the extent of nine figures in revenue produced.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_process">
+        <div class="container">
+            <h2 class="section_title" data-aos="fade-up" data-aos-delay="100">
+                The Growth Foundry FB Ads Process
+            </h2>
+            <div class="service_process__slider">
+                <div class="service_process__slider-list">
+                    <div class="service_process__itm" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service_process__itm-ico">
+                            <div class="service_process__itm-num">1</div>
+                            <svg width="249" height="271" viewBox="0 0 249 271" fill="none" xmlns="http://www.w3.org/2000/svg" class="service_process__itm-ico__bg">
+                                <g filter="url(#process_hex_shadow)">
+                                    <path d="M124.5 271L0 212.087V58.913L124.5 0L249 58.913V212.087L124.5 271Z" fill="url(#process_hex_gradient)" />
+                                </g>
+                                <defs>
+                                    <linearGradient id="process_hex_gradient" x1="36" y1="276.5" x2="198.5" y2="7.09535e-06" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#E8EEF0" />
+                                    <stop offset="1" stop-color="white" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                            <img src="{% static "marketing/img/content/process/research.svg" %}" alt="">
+                        </div>
+                        <div class="service_process__itm-info">
+                            <div class="service_process__itm-title">Research</div>
+                            <div class="service_process__itm-descr">
+                                We'll take a deep dive into your business, customers and competitors to give us the foundation to begin crafting your campaign
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service_process__itm" data-aos="fade-up" data-aos-delay="250">
+                        <div class="service_process__itm-ico">
+                            <div class="service_process__itm-num">2</div>
+                            <img src="{% static "marketing/img/content/process/preparation.svg" %}" alt="">
+                            <svg width="249" height="271" viewBox="0 0 249 271" fill="none" xmlns="http://www.w3.org/2000/svg" class="service_process__itm-ico__bg">
+                                <g filter="url(#process_hex_shadow)">
+                                    <path d="M124.5 271L0 212.087V58.913L124.5 0L249 58.913V212.087L124.5 271Z" fill="url(#process_hex_gradient)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="service_process__itm-info">
+                            <div class="service_process__itm-title">Plan</div>
+                            <div class="service_process__itm-descr">
+                                Our media buying specialists will create a strategic execution plan to deliver results for your business
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service_process__itm" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service_process__itm-ico">
+                            <div class="service_process__itm-num">3</div>
+                            <img src="{% static "marketing/img/content/process/startup.svg" %}" alt="">
+                            <svg width="249" height="271" viewBox="0 0 249 271" fill="none" xmlns="http://www.w3.org/2000/svg" class="service_process__itm-ico__bg">
+                                <g filter="url(#process_hex_shadow)">
+                                    <path d="M124.5 271L0 212.087V58.913L124.5 0L249 58.913V212.087L124.5 271Z" fill="url(#process_hex_gradient)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="service_process__itm-info">
+                            <div class="service_process__itm-title">Deploy</div>
+                            <div class="service_process__itm-descr">
+                                We'll rapidly launch new ads and creatives to begin testing the market and tailoring your campaign to find the ideal customer on Facebook
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service_process__itm" data-aos="fade-up" data-aos-delay="350">
+                        <div class="service_process__itm-ico">
+                            <div class="service_process__itm-num">4</div>
+                            <img src="{% static "marketing/img/content/process/agile.svg" %}" alt="">
+                            <svg width="249" height="271" viewBox="0 0 249 271" fill="none" xmlns="http://www.w3.org/2000/svg" class="service_process__itm-ico__bg">
+                                <g filter="url(#process_hex_shadow)">
+                                    <path d="M124.5 271L0 212.087V58.913L124.5 0L249 58.913V212.087L124.5 271Z" fill="url(#process_hex_gradient)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="service_process__itm-info">
+                            <div class="service_process__itm-title">Iterate</div>
+                            <div class="service_process__itm-descr">
+                                After your campaign is live our team will be constantly killing low performers, testing new creatives and pushing the envelope
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service_process__slider-nav">
+                    <button class="service_process__slider-prev">
+                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 14L2 7.5L8 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <button class="service_process__slider-next">
+                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7.5L1 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <img src="{% static "marketing/img/content/service_process_decor.svg" %}" alt="" class="service_process__decor">
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,202 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Dashboard | Front - Admin &amp; Dashboard Template</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./favicon.ico">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="{% static "dashboard/css/style.css" %}">
+    <link rel="stylesheet" href="{% static "dashboard/css/select2.min.css" %}">
+    <link rel="stylesheet" href="{% static "dashboard/css/Chart.min.css" %}">
+    <link rel="stylesheet" href="{% static "dashboard/css/theme.min.css" %}">
+  </head>
+
+  <body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl   footer-offset">
+
+    <!-- ========== HEADER ========== -->
+      <header id="header" class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-flush navbar-container navbar-bordered">
+        <div class="navbar-nav-wrap">
+          <div class="navbar-nav-wrap-content-left">
+            <!-- Navbar Vertical Toggle -->
+            <button type="button" class="js-navbar-vertical-aside-toggle-invoker close mr-3">
+              <i class="tio-first-page navbar-vertical-aside-toggle-short-align" data-toggle="tooltip" data-placement="right" title="Collapse"></i>
+              <i class="tio-last-page navbar-vertical-aside-toggle-full-align" data-template='<div class="tooltip d-none d-sm-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>' data-toggle="tooltip" data-placement="right" title="Expand"></i>
+            </button>
+            <!-- End Navbar Vertical Toggle -->
+          </div>
+          <!-- Secondary Content -->
+          <div class="navbar-nav-wrap-content-right">
+            <!-- Navbar -->
+            <ul class="navbar-nav align-items-center flex-row">
+              <li class="nav-item">
+                <!-- Account -->
+                <div class="hs-unfold">
+                  <a class="js-hs-unfold-invoker navbar-dropdown-account-wrapper" href="javascript:;"
+                     data-hs-unfold-options='{
+                       "target": "#accountNavbarDropdown",
+                       "type": "css-animation"
+                     }'>
+                    {% if user.is_authenticated %}
+                      <div class="avatar avatar-sm avatar-circle">
+                          <img class="avatar-img" src="{% static "dashboard/img/prof_pic.png" %}" alt="">
+                          <span class="avatar-status avatar-sm-status avatar-status-success"></span>
+                      </div>
+                    {% endif %}
+                  </a>
+                  <div id="accountNavbarDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right navbar-dropdown-menu navbar-dropdown-account" style="width: 16rem;">
+                    {% if user.is_authenticated %}
+                      <div class="dropdown-item-text">
+                        <div class="media align-items-center">
+                          <div class="avatar avatar-sm avatar-circle mr-2">
+                            <img class="avatar-img" src="{% static "dashboard/img/prof_pic.png" %}" alt="">
+                          </div>
+                          <div class="media-body">
+                            <span class="card-title h5">{{user.full_name}}</span>
+                            <span class="card-text">{{user.email}}</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="{% url 'account_logout' %}">
+                        <span class="text-truncate pr-2" title="Sign out">Sign out</span>
+                      </a>
+                    {% endif %}
+                  </div>
+                </div>
+                <!-- End Account -->
+              </li>
+            </ul>
+            <!-- End Navbar -->
+          </div>
+          <!-- End Secondary Content -->
+        </div>
+      </header>
+    <!-- ========== END HEADER ========== -->
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <!-- Navbar Vertical -->
+      <aside class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered  ">
+        <div class="navbar-vertical-container">
+          <div class="navbar-vertical-footer-offset">
+            <div class="navbar-brand-wrapper justify-content-between">
+              <!-- Logo -->
+
+                <a class="navbar-brand" href="{% url "dashboard" %}" aria-label="Front">
+                  <img class="navbar-brand-logo" src="{% static "dashboard/img/logo.svg" %}" alt="Logo">
+                  <img class="navbar-brand-logo-mini" src="{% static "dashboard/img/logo-short.svg" %}" alt="Logo">
+                </a>
+
+              <!-- End Logo -->
+
+              <!-- Navbar Vertical Toggle -->
+              <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-toggle btn btn-icon btn-xs btn-ghost-dark">
+                <i class="tio-clear tio-lg"></i>
+              </button>
+              <!-- End Navbar Vertical Toggle -->
+            </div>
+
+            <!-- Content -->
+            <div class="navbar-vertical-content">
+              <ul class="navbar-nav navbar-nav-lg nav-tabs">
+                <!-- Dashboards -->
+                <li class="navbar-vertical-aside-has-menu {% block nav_dashboard %}{% endblock %}">
+                  <a class="js-navbar-vertical-aside-menu-link nav-link " href="{% url 'dashboard' %}" title="Dashboard">
+                    <i class="tio-home-vs-1-outlined nav-icon"></i>
+                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Dashboard</span>
+                  </a>
+                </li>
+                <!-- End Dashboards -->
+                <li class="nav-item">
+                  <small class="nav-subtitle" title="Pages">Pages</small>
+                  <small class="tio-more-horizontal nav-subtitle-replacer"></small>
+                </li>
+                {% if request.user.is_growthfoundry_user %}
+                  <li class="navbar-vertical-aside-has-menu {% block nav_teams %} {% endblock %}">
+                    <a class="js-navbar-vertical-aside-menu-link nav-link" href="{% url 'dashboard_teams' %}" title="Teams">
+                      <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Teams</span>
+                    </a>
+                  </li>
+                {% endif %}
+                <li class="navbar-vertical-aside-has-menu {% block nav_clients %} {% endblock %}">
+                  <a class="js-navbar-vertical-aside-menu-link nav-link" href="{% url 'dashboard_clients' %}" title="Clients">
+                    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Clients</span>
+                  </a>
+                </li>
+                {% if request.user.is_growthfoundry_user %}
+                  <li class="navbar-vertical-aside-has-menu {% block nav_leads %} {% endblock %}">
+                    <a class="js-navbar-vertical-aside-menu-link nav-link" href="{% url 'dashboard_leads' %}" title="Leads">
+                      <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Leads</span>
+                    </a>
+                  </li>
+                {% endif %}
+                <!-- End Pages -->
+              </ul>
+            </div>
+            <!-- End Content -->
+          </div>
+        </div>
+      </aside>
+
+    <!-- End Navbar Vertical -->
+
+    <main id="content" role="main" class="main pointer-event">
+      <!-- Content -->
+      <div class="content container-fluid">
+        {% block content %}
+
+        {% endblock %}
+      </div>
+      <!-- End Content -->
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+
+    <!-- JS Global Compulsory  -->
+    <script src="{% static "marketing/js/jquery-3.6.0.min.js" %}"></script>
+    <script src="{% static "dashboard/js/jquery-migrate.min.js" %}"></script>
+    <script src="{% static "bootstrap.bundle.min.js" %}"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="{% static "dashboard/js/hs-navbar-vertical-aside.min.js" %}"></script>
+    <script src="{% static "dashboard/js/hs-unfold.min.js" %}"></script>
+    <script src="{% static "dist/app-bundle.js" %}"></script>
+
+    <!-- JS Front -->
+    <script src="{% static "dashboard/js/theme.min.js" %}"></script>
+        <!-- JS Plugins Init. -->
+    <script>
+      $(document).on('ready', function () {
+                // INITIALIZATION OF UNFOLD
+        // =======================================================
+        $('.js-hs-unfold-invoker').each(function () {
+          var unfold = new HSUnfold($(this)).init();
+        });
+
+               // INITIALIZATION OF NAVBAR VERTICAL NAVIGATION
+        // =======================================================
+        var sidebar = $('.js-navbar-vertical-aside').hsSideNav();
+
+        // INITIALIZATION OF TOOLTIP IN NAVBAR VERTICAL MENU
+        // =======================================================
+        $('.js-nav-tooltip-link').tooltip({ boundary: 'window' })
+
+        $(".js-nav-tooltip-link").on("show.bs.tooltip", function(e) {
+          if (!$("body").hasClass("navbar-vertical-aside-mini-mode")) {
+            return false;
+          }
+        });
+      })
+    </script>
+  </body>
+</html>

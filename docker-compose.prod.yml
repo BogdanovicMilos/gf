@@ -1,0 +1,80 @@
+version: '3.8'
+
+services:
+  nginx:
+    build: ./nginx
+    restart: unless-stopped
+    volumes:
+      - blog_:/var/www/html
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - web
+      - blog
+  web:
+    build:
+      context: ./
+      dockerfile: ./app/Dockerfile.prod
+    command: gunicorn core.wsgi:application --bind 0.0.0.0:8000
+    restart: unless-stopped
+    env_file:
+      - ./.env.prod
+    depends_on:
+      - db
+      - redis
+  db:
+    image: postgres:13.0-alpine
+    restart: unless-stopped
+    volumes:
+      - postgres_data_:/var/lib/postgresql/data/
+    env_file:
+      - ./.env.prod
+  redis:
+    image: redis:5-alpine
+  celery:
+    build:
+      context: ./
+      dockerfile: ./app/Dockerfile.prod
+    env_file:
+      - ./.env.prod
+    command: celery -A core worker --loglevel=info
+    links:
+      - redis
+  flower:
+    build:
+      context: ./
+      dockerfile: ./app/Dockerfile.prod
+    ports:
+      - 5555:5555
+    env_file:
+      - ./.env.prod
+    command: celery -A core flower --basic_auth=gfflower:RwVRY2dgHEbExHCR --port=5555 # web UI will be available on http://localhost:5555
+    links:
+      - redis
+      - celery
+  blog:
+    build:
+      context: ./blog
+    container_name: blog
+    restart: unless-stopped
+    env_file: ./blog/.env
+    volumes:
+      - blog_:/var/www/html
+    depends_on:
+      - blog-db
+  blog-db:
+    image: mysql:8.0
+    container_name: blog-db
+    restart: unless-stopped
+    env_file: ./blog/.env
+    environment:
+      - MYSQL_DATABASE=wordpress
+    volumes:
+      - mysql_data_:/var/lib/mysql
+    command: '--default-authentication-plugin=mysql_native_password'
+
+volumes:
+  postgres_data_:
+  blog_:
+  mysql_data_:

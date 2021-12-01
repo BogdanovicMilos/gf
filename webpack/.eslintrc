@@ -1,0 +1,63 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/recommended"
+    ],
+    "plugins": [
+      "jest",
+      "cypress"
+    ],
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "node": true,
+      "es6": true,
+      "jest": true
+    },
+    "parser": "vue-eslint-parser",
+    "parserOptions": {
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false,
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": false,
+        "globalReturn": false,
+        "impliedStrict": false,
+        "modules": true
+      }
+    },
+    "rules": {
+      "indent": ["error", 2],
+      "no-class-assign": "off",
+      "no-prototype-builtins": "off",
+      "no-console": "warn",
+      "strict": ["error", "global"],
+      "curly": "warn",
+      "no-var": "warn",
+      "eol-last":"warn",
+      "quotes": "warn",
+      "semi": "warn",
+      "no-unused-vars": "warn",
+      "no-debugger": "warn",
+      "key-spacing": "warn",
+      "keyword-spacing": "warn",
+      "arrow-spacing": "warn",
+      "comma-spacing": "warn",
+      "space-before-blocks": "warn",
+      "vue/max-attributes-per-line": ["error", {
+        "singleline": {
+            "max": 5,
+            "allowFirstLine": true
+        },
+        "multiline": {
+            "max": 1,
+            "allowFirstLine": false
+        }
+      }],
+      "vue/padding-line-between-blocks": ["error", "always"]
+    },
+    "globals": {
+      "env": true
+    }
+  }

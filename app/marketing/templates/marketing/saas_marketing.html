@@ -1,0 +1,184 @@
+{% extends 'marketing/base/base.html' %}
+
+{% load static %}
+
+{% block meta %}
+    <title>SaaS Marketing</title>
+    <meta name="description" content="">
+{% endblock %}
+
+{% block body %}
+
+    <div id="trigger-service">
+
+        <div id="stiky-img" data-aos="fade" data-aos-delay="400">
+            <img src="{% static "marketing/img/content/sass_marketing.svg" %}" alt="">
+        </div>
+
+        <div id="trigger-service-section-1">
+
+            {% include 'marketing/includes/header.html' %}
+
+            <div class="container" data-aos="fade" data-aos-delay="700">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li>SaaS Marketing </li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="service_intro service_intro--one_page">
+                <div class="container">
+                    <div class="service_intro__grid">
+                        <h2 class="section_title service_intro__title" data-da=".service_intro__title-pc, 1024" data-aos="fade-up" data-aos-delay="100">SaaS Marketing Agency with Hundreds of Millions in Revenue Generated</h2>
+                        <div class="service_intro__img">
+                            <img src="{% static "marketing/img/content/sass_marketing.svg" %}" alt="">
+                    </div>
+                    <div class="service_intro__text">
+                        <div class="service_intro__title-pc"></div>
+                        <div class="section_subtitle" data-aos="fade-up" data-aos-delay="150">That is not a typo. Our core team's background is in software development and to this day we employ a dedicated office of engineers.</div>
+                            <div class="richtext" data-aos="fade-up" data-aos-delay="200">
+                                <p>We applied our Growth Foundry Framework to the SaaS space and you will be attributing your platform’s growth to the core pillars we manufacture for your brand.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="service_hex_section" id="trigger-service-section-2">
+            <div class="container">
+                <div class="service_hex">
+                    <div class="service_hex__before">
+                        <svg viewBox="0 0 728 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#service_hex_shadow)">
+                            <path d="M364 0.000703209L6.10352e-05 116.012L728 116.012L364 0.000703209Z" fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="service_hex__content">
+                        <h2 class="section_title" data-aos="fade-up" data-aos-delay="200">Get started building the foundation of your SaaS growth plan</h2>
+                        <a href="{% url 'get_in_touch' %}" class="btn btn-main" data-aos="fade-up" data-aos-delay="300">Contact Us</a>
+                    </div>
+                    <div class="service_hex__after">
+                        <svg viewBox="0 0 728 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#service_hex_shadow)">
+                            <path d="M364 0.000703209L6.10352e-05 116.012L728 116.012L364 0.000703209Z" fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="service_process service_process--saas">
+        <div class="container">
+            <h2 class="section_title" data-aos="fade-up" data-aos-delay="100">The Growth Foundry SaaS Process</h2>
+            <div class="service_process__slider">
+                <div class="service_process__slider-list">
+                    <div class="service_process__itm" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service_process__itm-ico">
+                            <div class="service_process__itm-num">1</div>
+                            <svg width="249" height="271" viewBox="0 0 249 271" fill="none" xmlns="http://www.w3.org/2000/svg" class="service_process__itm-ico__bg">
+                            <g filter="url(#process_hex_shadow)">
+                                <path d="M124.5 271L0 212.087V58.913L124.5 0L249 58.913V212.087L124.5 271Z" fill="url(#process_hex_gradient)" />
+                            </g>
+                            <defs>
+                                <linearGradient id="process_hex_gradient" x1="36" y1="276.5" x2="198.5" y2="7.09535e-06" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#E8EEF0" />
+                                <stop offset="1" stop-color="white" />
+                                </linearGradient>
+                            </defs>
+                            </svg>
+                            <img src="{% static "marketing/img/content/saas.svg" %}" alt="">
+                        </div>
+                        <div class="service_process__itm-info">
+                            <div class="service_process__itm-title">SaaS Content<br>Marketing Like a Pro</div>
+                            <div class="service_process__itm-descr">
+                                <p>Typically content marketing is an overused buzzword that gets applied to a simple blog post made every month because Google told you that good content matters. That statement being reiterated time and time again has led to more thoughtless blog posts created than anything has or ever will in the history of the internet.</p>
+                                <p>Our content marketing includes an ideation process for blog post creation, but a smart content plan goes above and beyond. We work with your team to create pillar pieces of content, including downloads, lead magnets, and other items that can be used for order bumps.</p>
+                                <p>We ideate what content we can create that increases retention, helps users with use cases, and offers information that might interest potential users based on our customer avatar. We help you plan and create content for every step of the purchasing journey.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service_process__itm" data-aos="fade-up" data-aos-delay="250">
+                        <div class="service_process__itm-ico">
+                            <div class="service_process__itm-num">2</div>
+                            <img src="{% static "marketing/img/content/analytics.svg" %}" alt="">
+                            <svg width="249" height="271" viewBox="0 0 249 271" fill="none" xmlns="http://www.w3.org/2000/svg" class="service_process__itm-ico__bg">
+                            <g filter="url(#process_hex_shadow)">
+                                <path d="M124.5 271L0 212.087V58.913L124.5 0L249 58.913V212.087L124.5 271Z" fill="url(#process_hex_gradient)" />
+                            </g>
+                            </svg>
+                        </div>
+                        <div class="service_process__itm-info">
+                            <div class="service_process__itm-title">SaaS SEO: Because the Content
+                            <br>Won’t Promote Itself</div>
+                            <div class="service_process__itm-descr">
+                            <p>Having amazing content and funnels to make people aware of your brand and drive them deeper down the conversion path is important but what if no one sees them? We remove that possibility through amplifying the content with media buying as well as SEO.</p>
+                            <p>SEO is one of the best long term investments you will make in your brand. Our first step is to run a several hundred point audit that encompasses technical issues, content gaps and optimization, as well as current link deficiencies based on competitor parity. Our relationships with journalists, bloggers, and influencers help amplify your content and our white hat link acquisition strategy ensures your organic growth increases in a safe and evergreen manner.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service_process__itm" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service_process__itm-ico">
+                            <div class="service_process__itm-num">3</div>
+                            <img src="{% static "marketing/img/content/social-media.svg" %}" alt="">
+                            <svg width="249" height="271" viewBox="0 0 249 271" fill="none" xmlns="http://www.w3.org/2000/svg" class="service_process__itm-ico__bg">
+                            <g filter="url(#process_hex_shadow)">
+                                <path d="M124.5 271L0 212.087V58.913L124.5 0L249 58.913V212.087L124.5 271Z" fill="url(#process_hex_gradient)" />
+                            </g>
+                            </svg>
+                        </div>
+                        <div class="service_process__itm-info">
+                            <div class="service_process__itm-title">Media Buying for
+                            <br>your SaaS Platform</div>
+                            <div class="service_process__itm-descr">
+                            <p>This is the ATM component of our SaaS marketing strategy. Creating the content and optin materials and ranking them organically provides an amazing ROI over time. With our expert SaaS Media Buying team we can turn on a faucet, no, open a floodgate of sales for your platform.</p>
+                            <p>Based on your customer avatar we determine which platforms would be best for your brand’s offer and start the media planning process. We buy millions of dollars in profitable media and generate an immense amount of revenue for our clients. Heck, we do it for our own SaaS platforms as well.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service_process__itm" data-aos="fade-up" data-aos-delay="350">
+                        <div class="service_process__itm-ico">
+                            <div class="service_process__itm-num">4</div>
+                            <img src="{% static "marketing/img/content/subscription.svg" %}" alt="">
+                            <svg width="249" height="271" viewBox="0 0 249 271" fill="none" xmlns="http://www.w3.org/2000/svg" class="service_process__itm-ico__bg">
+                                <g filter="url(#process_hex_shadow)">
+                                    <path d="M124.5 271L0 212.087V58.913L124.5 0L249 58.913V212.087L124.5 271Z" fill="url(#process_hex_gradient)" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="service_process__itm-info">
+                            <div class="service_process__itm-title">A Growth Foundry<br>SaaS Framework</div>
+                            <div class="service_process__itm-descr">
+                                <p>To summate, we start with an intelligent and unique customer avatar building experience. From this we can determine messaging, content needed, additional offers that need created, and on which platforms to promote that content.</p>
+                                <p>Our technical SEO team, filled with thought leaders in the industry, true artisans of the craft create an end to end blueprint on taking your organic traffic to new heights. Finally, to start raking in new signups ASAP, we put our coveted media buying team to work creating a non stop flow of new users.</p>
+                                <p>Get in touch today and one of our Saas marketing experts will work with your team to develop your Saas Growth Blueprint.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service_process__slider-nav">
+                    <button class="service_process__slider-prev">
+                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 14L2 7.5L8 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <button class="service_process__slider-next">
+                        <svg width="9" height="15" viewBox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 7.5L1 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

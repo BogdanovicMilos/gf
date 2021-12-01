@@ -1,0 +1,12 @@
+{
+	// List of recomended extensions.
+	"recommendations": [
+		"ms-python.python",
+		"ms-azuretools.vscode-docker",
+		"njpwerner.autodocstring",
+		"octref.vetur",
+		"dbaeumer.vscode-eslint",
+		"mhmadhamster.postcss-language",
+		"orta.vscode-jest",
+	]
+}

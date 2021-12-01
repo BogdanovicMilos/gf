@@ -1,0 +1,78 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 100vh;
+  height: calc((var(--vh, 1vh) * 100) - 68px);
+  background-color: #fff;
+  margin-top: 68px;
+  padding: 16px 0;
+  opacity: 0%;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.35s ease, visibility 0.35s ease;
+  overflow-y: auto;
+}
+
+.menu.active {
+  visibility: visible;
+  opacity: 100%;
+  pointer-events: all;
+}
+
+.menu__nav {
+  font-family: "RNSPhysis", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.menu__nav ul ul {
+  padding-left: 25px;
+}
+
+.menu__nav a {
+  display: block;
+  padding: 10px 0;
+}
+
+.menu__nav .has-submenu > a::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: middle;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iOSIgdmlld0JveD0iMCAwIDEwIDkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04LjcyODIzIDQuMDAwMDJMNC44NjQyNiA3Ljg2Mzk5TDEuMDAwMjkgNC4wMDAwMiIgc3Ryb2tlPSIjMzQzQjQzIi8+Cjwvc3ZnPgo=");
+}
+
+.menu .btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 0 32px;
+}
+
+.richtext > *:first-child {
+  margin-top: 0;
+}
+
+.richtext > *:last-child {
+  margin-bottom: 0;
+}
+
+.richtext p {
+  margin: 1.3em 0;
+}
+
+.richtext a {
+  color: #304f95;
+  border-bottom: 1px solid #304f95;
+}
+
+.richtext img {
+  margin: 1.3em 0;
+  display: block;
+  max-width: 100%;
+}

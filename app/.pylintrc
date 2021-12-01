@@ -1,0 +1,30 @@
+[MASTER]
+disable=missing-docstring,
+        too-few-public-methods,
+        too-many-arguments,
+        protected-access,
+        logging-format-interpolation,
+        wrong-import-order,
+        useless-object-inheritance,
+        no-else-return,
+        duplicate-code,
+        bad-continuation,
+        invalid-name,
+        abstract-method,
+        broad-except,
+        import-error,
+        too-many-return-statements,
+        too-many-locals,
+        too-many-branches,
+        logging-fstring-interpolation,
+        simplifiable-if-expression,
+        super-init-not-called,
+        arguments-differ,
+        inconsistent-return-statements,
+        raise-missing-from
+max-line-length=119
+ignore=tests,manage.py
+ignore-patterns="*.pyi"
+
+[FORMAT]
+indent-string="    "

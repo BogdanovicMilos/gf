@@ -1,0 +1,53 @@
+@font-face {
+  font-family: "RNSPhysis";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RNSPhysis/RNSPhysis-Black.eot");
+  src: url("../fonts/RNSPhysis/RNSPhysis-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/RNSPhysis/RNSPhysis-Black.woff") format("woff"), url("../fonts/RNSPhysis/RNSPhysis-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RNSPhysis";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RNSPhysis/RNSPhysis-Bold.eot");
+  src: url("../fonts/RNSPhysis/RNSPhysis-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/RNSPhysis/RNSPhysis-Bold.woff") format("woff"), url("../fonts/RNSPhysis/RNSPhysis-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RNSPhysis";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RNSPhysis/RNSPhysis-Light.eot");
+  src: url("../fonts/RNSPhysis/RNSPhysis-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/RNSPhysis/RNSPhysis-Light.woff") format("woff"), url("../fonts/RNSPhysis/RNSPhysis-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RNSPhysis";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/RNSPhysis/RNSPhysis-Medium.eot");
+  src: url("../fonts/RNSPhysis/RNSPhysis-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/RNSPhysis/RNSPhysis-Medium.woff") format("woff"), url("../fonts/RNSPhysis/RNSPhysis-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot");
+  src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot");
+  src: url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.ttf") format("truetype");
+}

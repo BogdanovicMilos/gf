@@ -1,0 +1,606 @@
+.intro {
+  padding-top: 89px;
+  padding-bottom: 25px;
+  text-align: center;
+  position: relative;
+  margin-top: -68px;
+}
+
+.intro .container {
+  max-width: 1309px;
+}
+
+.intro__title {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro__descr {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.2;
+  max-width: 274px;
+  margin: 32px auto 0;
+}
+
+.intro__form {
+  margin-top: 286px;
+  background: rgb(255 255 255 / 80%);
+  box-shadow: 0 4px 40px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  padding: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.intro__form-field {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.intro__form-field input {
+  height: 56px;
+  border: 1px solid #f0f0f0;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #fafafa;
+  padding-left: 73px;
+  font-size: 16px;
+  font-family: "RNSPhysis", sans-serif;
+  font-weight: 500;
+  transition: border 0.35s ease;
+  letter-spacing: -0.02em;
+}
+
+.intro__form-field input::input-placeholder {
+  font-weight: 300;
+  color: #343b43;
+}
+
+.intro__form-field input::placeholder {
+  font-weight: 300;
+  color: #343b43;
+}
+
+.intro__form-field input:input-placeholder {
+  font-weight: 300;
+  color: #343b43;
+}
+
+.intro__form-field input::placeholder {
+  font-weight: 300;
+  color: #343b43;
+}
+
+.intro__form-field input:focus {
+  border-color: #304f95;
+}
+
+.intro__form-field input:focus + svg {
+  color: #304f95;
+}
+
+.intro__form-field svg {
+  position: absolute;
+  left: 34px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #d2d4d5;
+  transition: color 0.35s ease;
+}
+
+.intro__form .btn {
+  width: 100%;
+}
+
+.intro__partners {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.intro__partners-title {
+  color: #304f95;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  font-family: "RNSPhysis", sans-serif;
+}
+
+.intro__partners-slider {
+  margin-top: 16px;
+}
+
+.intro__partners-slider__list {
+  display: flex;
+  display: flexbox;
+  display: flex;
+  align-items: center;
+  flex-align: center;
+  align-items: center;
+}
+
+.intro__partners-itm {
+  flex-shrink: 0;
+  flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.intro__hexagon {
+  display: block;
+  position: absolute;
+  top: 260px;
+  left: 8px;
+  z-index: -1;
+}
+
+.intro__hexagon-bg {
+  position: relative;
+  width: 438px;
+  height: 426px;
+}
+
+.intro__hexagon-bg path {
+  stroke: #f0f0f0;
+}
+
+.intro__hexagon-bg path:nth-child(1) {
+  animation: hexagonAnim-2 20s -13s ease infinite;
+  animation: hexagonAnim-2 20s -13s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(2) {
+  animation: hexagonAnim-2 20s -12.5s ease infinite;
+  animation: hexagonAnim-2 20s -12.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(3) {
+  animation: hexagonAnim-2 20s -4.5s ease infinite;
+  animation: hexagonAnim-2 20s -4.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(4) {
+  animation: hexagonAnim-2 20s -22.5s ease infinite;
+  animation: hexagonAnim-2 20s -22.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(5) {
+  animation: hexagonAnim-2 20s -17.5s ease infinite;
+  animation: hexagonAnim-2 20s -17.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(6) {
+  animation: hexagonAnim-2 20s -16.5s ease infinite;
+  animation: hexagonAnim-2 20s -16.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(7) {
+  animation: hexagonAnim-2 20s -13s ease infinite;
+  animation: hexagonAnim-2 20s -13s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(8) {
+  animation: hexagonAnim-2 20s -6.5s ease infinite;
+  animation: hexagonAnim-2 20s -6.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(9) {
+  animation: hexagonAnim-1 20s -12.5s ease infinite;
+  animation: hexagonAnim-1 20s -12.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(10) {
+  animation: hexagonAnim-1 20s -19s ease infinite;
+  animation: hexagonAnim-1 20s -19s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(11) {
+  animation: hexagonAnim-2 20s -17.5s ease infinite;
+  animation: hexagonAnim-2 20s -17.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(12) {
+  animation: hexagonAnim-2 20s -23s ease infinite;
+  animation: hexagonAnim-2 20s -23s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(13) {
+  animation: hexagonAnim-1 20s -17s ease infinite;
+  animation: hexagonAnim-1 20s -17s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(14) {
+  animation: hexagonAnim-2 20s -23s ease infinite;
+  animation: hexagonAnim-2 20s -23s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(15) {
+  animation: hexagonAnim-2 20s -4s ease infinite;
+  animation: hexagonAnim-2 20s -4s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(16) {
+  animation: hexagonAnim-2 20s -20s ease infinite;
+  animation: hexagonAnim-2 20s -20s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(17) {
+  animation: hexagonAnim-1 20s -7.5s ease infinite;
+  animation: hexagonAnim-1 20s -7.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(18) {
+  animation: hexagonAnim-1 20s -12s ease infinite;
+  animation: hexagonAnim-1 20s -12s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(19) {
+  animation: hexagonAnim-1 20s -9s ease infinite;
+  animation: hexagonAnim-1 20s -9s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(20) {
+  animation: hexagonAnim-2 20s -11s ease infinite;
+  animation: hexagonAnim-2 20s -11s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(21) {
+  animation: hexagonAnim-2 20s -5s ease infinite;
+  animation: hexagonAnim-2 20s -5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(22) {
+  animation: hexagonAnim-1 20s -25s ease infinite;
+  animation: hexagonAnim-1 20s -25s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(23) {
+  animation: hexagonAnim-2 20s -14s ease infinite;
+  animation: hexagonAnim-2 20s -14s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(24) {
+  animation: hexagonAnim-2 20s -21s ease infinite;
+  animation: hexagonAnim-2 20s -21s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(25) {
+  animation: hexagonAnim-1 20s -24s ease infinite;
+  animation: hexagonAnim-1 20s -24s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(26) {
+  animation: hexagonAnim-1 20s -18.5s ease infinite;
+  animation: hexagonAnim-1 20s -18.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(27) {
+  animation: hexagonAnim-1 20s -22.5s ease infinite;
+  animation: hexagonAnim-1 20s -22.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(28) {
+  animation: hexagonAnim-2 20s -22s ease infinite;
+  animation: hexagonAnim-2 20s -22s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(29) {
+  animation: hexagonAnim-1 20s -8s ease infinite;
+  animation: hexagonAnim-1 20s -8s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(30) {
+  animation: hexagonAnim-2 20s -16s ease infinite;
+  animation: hexagonAnim-2 20s -16s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(31) {
+  animation: hexagonAnim-1 20s -23.5s ease infinite;
+  animation: hexagonAnim-1 20s -23.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(32) {
+  animation: hexagonAnim-1 20s -21.5s ease infinite;
+  animation: hexagonAnim-1 20s -21.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(33) {
+  animation: hexagonAnim-2 20s -17.5s ease infinite;
+  animation: hexagonAnim-2 20s -17.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(34) {
+  animation: hexagonAnim-2 20s -20s ease infinite;
+  animation: hexagonAnim-2 20s -20s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(35) {
+  animation: hexagonAnim-2 20s -18.5s ease infinite;
+  animation: hexagonAnim-2 20s -18.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(36) {
+  animation: hexagonAnim-2 20s -16.5s ease infinite;
+  animation: hexagonAnim-2 20s -16.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(37) {
+  animation: hexagonAnim-1 20s -2.5s ease infinite;
+  animation: hexagonAnim-1 20s -2.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(38) {
+  animation: hexagonAnim-2 20s -19.5s ease infinite;
+  animation: hexagonAnim-2 20s -19.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(39) {
+  animation: hexagonAnim-1 20s -18s ease infinite;
+  animation: hexagonAnim-1 20s -18s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(40) {
+  animation: hexagonAnim-1 20s -15.5s ease infinite;
+  animation: hexagonAnim-1 20s -15.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(41) {
+  animation: hexagonAnim-2 20s -1.5s ease infinite;
+  animation: hexagonAnim-2 20s -1.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(42) {
+  animation: hexagonAnim-2 20s -12.5s ease infinite;
+  animation: hexagonAnim-2 20s -12.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(43) {
+  animation: hexagonAnim-2 20s -10s ease infinite;
+  animation: hexagonAnim-2 20s -10s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(44) {
+  animation: hexagonAnim-2 20s -14s ease infinite;
+  animation: hexagonAnim-2 20s -14s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(45) {
+  animation: hexagonAnim-1 20s -9s ease infinite;
+  animation: hexagonAnim-1 20s -9s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(46) {
+  animation: hexagonAnim-2 20s -17.5s ease infinite;
+  animation: hexagonAnim-2 20s -17.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(47) {
+  animation: hexagonAnim-2 20s -14.5s ease infinite;
+  animation: hexagonAnim-2 20s -14.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(48) {
+  animation: hexagonAnim-2 20s -10.5s ease infinite;
+  animation: hexagonAnim-2 20s -10.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(49) {
+  animation: hexagonAnim-2 20s -0.5s ease infinite;
+  animation: hexagonAnim-2 20s -0.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(50) {
+  animation: hexagonAnim-2 20s -11s ease infinite;
+  animation: hexagonAnim-2 20s -11s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(51) {
+  animation: hexagonAnim-2 20s -6s ease infinite;
+  animation: hexagonAnim-2 20s -6s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-bg path:nth-child(52) {
+  animation: hexagonAnim-1 20s -5.5s ease infinite;
+  animation: hexagonAnim-1 20s -5.5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.intro__hexagon-accent_itm {
+  position: absolute;
+  z-index: 0;
+  width: 52px;
+  height: 56px;
+  opacity: 0%;
+}
+
+.intro__hexagon-accent_itm svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.65);
+  transform: translate(-50%, -50%) scale(0.65);
+}
+
+@keyframes hexagonAnim-1 {
+  0%,
+  49% {
+    fill: #f0f0f0;
+  }
+
+  51%,
+  100% {
+    fill: rgb(240 240 240 / 0%);
+  }
+}
+
+@keyframes hexagonAnim-1 {
+  0%,
+  49% {
+    fill: #f0f0f0;
+  }
+
+  51%,
+  100% {
+    fill: rgb(240 240 240 / 0%);
+  }
+}
+
+@keyframes hexagonAnim-2 {
+  0%,
+  49% {
+    fill: rgb(240 240 240 / 0%);
+  }
+
+  51%,
+  100% {
+    fill: #f0f0f0;
+  }
+}
+
+@keyframes hexagonAnim-2 {
+  0%,
+  49% {
+    fill: rgb(240 240 240 / 0%);
+  }
+
+  51%,
+  100% {
+    fill: #f0f0f0;
+  }
+}
+
+.hexagon_blink {
+  animation: hexagonBlink 5s ease infinite;
+  animation: hexagonBlink 5s ease infinite;
+  animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@keyframes hexagonBlink {
+  10%,
+  90% {
+    opacity: 100%;
+  }
+
+  0%,
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes hexagonBlink {
+  10%,
+  90% {
+    opacity: 100%;
+  }
+
+  0%,
+  100% {
+    opacity: 0%;
+  }
+}

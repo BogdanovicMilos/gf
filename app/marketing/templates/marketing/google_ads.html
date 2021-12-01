@@ -1,0 +1,197 @@
+{% extends 'marketing/base/base.html' %}
+
+{% load static %}
+
+{% block meta %}
+    <title>Adwords/Google PPC Management For SMBs and | growthfoundry.com</title>
+    <meta name="description" content="We manage millions of dollars in monthly Google Ad spend and have countless successful campaigns under our belt. Contact us to work together.">
+{% endblock %}
+
+{% block body %}
+
+    {% include 'marketing/includes/header.html' %}
+
+    <div class="container" data-aos="fade" data-aos-delay="700">
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li>Google Ads</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="service_intro">
+        <div class="container">
+            <div class="service_intro__grid service_intro__grid--align_top">
+                <h2 class="section_title service_intro__title" data-da=".service_intro__title-pc, 1024" data-aos="fade-up" data-aos-delay="100">
+                    PPC: Google Ads Management Co. with the Best Guarantee in the Industry
+                </h2>
+                <div class="service_intro__img" data-aos="fade" data-aos-delay="100">
+                    <img src="{% static "marketing/img/content/Google.svg" %}" alt="">
+                </div>
+                <div class="service_intro__text">
+                    <div class="service_intro__title-pc"></div>
+                    <div class="richtext" data-aos="fade-up" data-aos-delay="150">
+                        <p>Managing tens of millions per dollars in profitable ad spend has allowed us to develop systems and guarantees that make Growth Foundry stand out as a great white shark in a sea full of flounder.</p>
+                    </div>
+                    <div class="service_intro__btns" data-aos="fade" data-aos-delay="450">
+                        <a href="#services" class="btn btn-main">Learn More</a>
+                        <a href="{% url 'get_in_touch' %}" class="btn btn-dark">Contacts Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_contact">
+        <div class="container" id="services">
+            <div class="service_contact__row">
+            <div class="service_contact__text">
+                <div class="section_title" data-aos="fade-up" data-aos-delay="100">
+                    If you are currently running Google Adwords, we guarantee we will find ways to save you money or we will pay you $500
+                </div>
+                <div class="richtext" data-aos="fade-up" data-aos-delay="150">
+                    <p>Once you take us up on this free, no obligation offer, spend a moment reading the page and we will walk you through what makes us so confident in our services that we are paying out of pocket to those we cannot help</p>
+                </div>
+            </div>
+            <div class="service_contact__right">
+                <div class="schedule-a-local-seo-call"></div>
+                <img src="{% static "marketing/img/content/service_contact_form_before.svg" %}" alt="" class="service_contact__right-before">
+                <img src="{% static "marketing/img/content/service_contact_form_before.svg" %}" alt="" class="service_contact__right-after">
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_short_article">
+        <div class="container">
+            <div class="service_short_article__row">
+                <div class="service_short_article__img" data-aos="fade" data-aos-delay="100">
+                    <img src="{% static "marketing/img/content/google-1.svg" %}" alt="">
+                </div>
+                <div class="service_short_article__text">
+                    <div class="section_title" data-aos="fade-up" data-aos-delay="100">
+                        Stop losing money <br>on&nbsp;ads
+                    </div>
+                    <div class="service_short_article__descr" data-aos="fade-up" data-aos-delay="150">
+                        <p>We've seen countless ways advertising campaigns lose money and we'll use our expertise to make sure yours don't.</p>
+                    </div>
+                    <a href="#services" class="btn btn-main" data-aos="fade" data-aos-delay="500">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_section_avatar">
+        <div class="container">
+            <div class="service_section_avatar__row">
+                <div class="service_section_avatar__col">
+                    <h2 class="section_title" data-aos="fade-up" data-aos-delay="100">
+                        Customer Avatar <br>Building On Steroids
+                    </h2>
+                    <div class="richtext" data-aos="fade-up" data-aos-delay="150">
+                        <p>Our onboarding process is atypical. We start with analyzing your current landing pages and funnel, then our conversion optimization experts provide feedback and suggest changes to based the on best practice data we've gathered over years of high performance PPC campaign optimizations.</p>
+                        <p>Parallel with those efforts we will perform our customer mapping process where we work with you and potentially existing clients/customers to create a customer avatar that goes beyond demographics. We ensure we know exactly what your users want to see and when in their buying journey they need to see it in order to create a conversion.</p>
+                    </div>
+                </div>
+                <div class="service_section_avatar__col">
+                    <h2 class="section_title" data-aos="fade-up" data-aos-delay="150">
+                        Proprietary Campaign Building
+                    </h2>
+                    <div class="richtext"  data-aos="fade-up" data-aos-delay="200">
+                        <p>After finalizing initial setup we check for message congruency across ads, landing pages, and all brand assets so we create a seamless conversion process. We deploy a proprietary 4x4 method of ad setup that allows us to gather data quickly and identify winning campaigns quickly. Setting up a pay per click campaign that can generate leads/sales isn’t rocket science, but maintaining profitable results indefinitely requires a proper maintenance plan.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service_section_avatar__img" data-aos="fade" data-aos-delay="150">
+                <img src="{% static "marketing/img/content/google-2.jpg" %}" alt="">
+            </div>
+        </div>
+    </section>
+
+    {% comment %} <section class="service_section_protecting">
+        <div class="container">
+            <div class="service_section_protecting__row">
+                <img src="{% static "marketing/img/content/service_section_protecting-hex.svg" %}" alt="" class="service_section_protecting__row-before">
+                <img src="{% static "marketing/img/content/service_section_protecting-hex.svg" %}" alt="" class="service_section_protecting__row-after">
+                <div class="service_section_protecting__img" data-aos="fade" data-aos-delay="100">
+                    <img src="{% static "marketing/img/content/google-3.svg" %}" alt="">
+                </div>
+                <div class="service_section_protecting__text">
+                    <div class="service_section_protecting__text-itm">
+                        <h2 class="section_title" data-aos="fade-up" data-aos-delay="100">
+                            Protecting your Bottom Line
+                        </h2>
+                        <div class="richtext" data-aos="fade-up" data-aos-delay="150">
+                            <p>Did you know that ~20% of clicks can be fraudulent? That means for every $1000 you spend on ads you can be wasting $200. For larger campaigns that can start equalling a lot of unnecessary lost money. We have a cutting edge software we employ to prevent fraudulent clicks before they ever become a problem for your account. The click refutation process is a headache, we mitigate the issue before it ever becomes one.</p>
+                        </div>
+                    </div>
+                    <div class="service_section_protecting__text-itm">
+                        <h2 class="section_title" data-aos="fade-up" data-aos-delay="200">Ongoing Maintenance and Optimization</h2>
+                        <div class="richtext" data-aos="fade-up" data-aos-delay="250">
+                            <p>Have you ever had a successful campaign that after 30, 60, 90 days, etc. just died and stopped performing? Ads need ongoing optimization. Continued management, optimization, and testing. Negative keyword lists need to be updated and improved. Messaging might need to shift as the company evolves, for seasonality purposes, and so on. We are your Google Ads partner.</p>
+                        </div>
+                    </div>
+                    <div class="service_section_protecting__indexes" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service_section_protecting__index">
+                            <svg viewBox="0 0 24 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="service_section_protecting__index-before">
+                                <g filter="url(#service_protecting_shadow)">
+                                    <path d="M21.7447 23.3872L7.63032 3.38725C6.13136 1.26322 3.69377 -9.31325e-07 1.09408 -1.04496e-06L0 -1.09278e-06L-4.35519e-06 56L1.09408 56C3.69377 56 6.13135 54.7368 7.63032 52.6127L21.7447 32.6127C23.6964 29.8472 23.6964 26.1527 21.7447 23.3872Z" fill="white" />
+                                </g>
+                            </svg>
+                            <b>$300k</b> in managed <br>spend
+                            <svg viewBox="0 0 24 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="service_section_protecting__index-after">
+                                <g filter="url(#service_protecting_shadow)">
+                                    <path d="M21.7447 23.3872L7.63032 3.38725C6.13136 1.26322 3.69377 -9.31325e-07 1.09408 -1.04496e-06L0 -1.09278e-06L-4.35519e-06 56L1.09408 56C3.69377 56 6.13135 54.7368 7.63032 52.6127L21.7447 32.6127C23.6964 29.8472 23.6964 26.1527 21.7447 23.3872Z" fill="white" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="service_section_protecting__index">
+                            <svg viewBox="0 0 24 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="service_section_protecting__index-before">
+                                <g filter="url(#service_protecting_shadow)">
+                                    <path d="M21.7447 23.3872L7.63032 3.38725C6.13136 1.26322 3.69377 -9.31325e-07 1.09408 -1.04496e-06L0 -1.09278e-06L-4.35519e-06 56L1.09408 56C3.69377 56 6.13135 54.7368 7.63032 52.6127L21.7447 32.6127C23.6964 29.8472 23.6964 26.1527 21.7447 23.3872Z" fill="white" />
+                                </g>
+                            </svg>
+                            <b>4k</b> phone calls <br>generated
+                            <svg viewBox="0 0 24 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="service_section_protecting__index-after">
+                                <g filter="url(#service_protecting_shadow)">
+                                    <path d="M21.7447 23.3872L7.63032 3.38725C6.13136 1.26322 3.69377 -9.31325e-07 1.09408 -1.04496e-06L0 -1.09278e-06L-4.35519e-06 56L1.09408 56C3.69377 56 6.13135 54.7368 7.63032 52.6127L21.7447 32.6127C23.6964 29.8472 23.6964 26.1527 21.7447 23.3872Z" fill="white" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> {% endcomment %}
+
+    <section class="service_columns_text">
+        <div class="container">
+            <div class="service_columns_text__row">
+                <div class="service_columns_text__column">
+                    <h2 class="section_title" data-aos="fade-up" data-aos-delay="100">
+                        When Good isn’t Good Enough
+                    </h2>
+                    <div class="richtext" data-aos="fade-up" data-aos-delay="150">
+                        <p>Most agencies strive to provide the minimum needed satisfaction to their client. The minimum effort required to ensure the monthly billing continues and the client touchpoints are low. They follow this trend for 6 months or 9 months, however long it takes for the client to realize they could be doing better so they shop around and switch companies.</p>
+                        <p>Our philosophy is to invest heavily into our client campaigns and ensure their ROI because most of our engagements last for multiple years. We have clients that have been on board with us for almost a decade. That’s where we achieve maximum profitability, from multiple year engagements.</p>
+                        <p>We do this by making sure your PPC campaigns are cutting edge. Our blended team of conversion rate optimization specialists, developers, and media buying mechanics work in unison to constantly look for improvements.</p>
+                    </div>
+                </div>
+                <div class="service_columns_text__column">
+                    <h2 class="section_title" data-aos="fade-up" data-aos-delay="200">
+                        Reporting Done Like We Care
+                    </h2>
+                    <div class="richtext" data-aos="fade-up" data-aos-delay="250">
+                        <p>Do you care how much a click costs? Maybe. What if your cheapest clicks are your most expensive customers to convert? What if they have the largest churn percentage out of any marketing channel? How would we feel if you are not profitable at all even though the front end vanity metrics look good?</p>
+                        <p>Our world class reporting allows us to integrate and track multiple marketing channels and perform true client/customer attribution. The Growth Foundry team obsesses over getting feedback data on your macro conversions so we can use that to constantly optimize and improve.</p>
+                        <p>When we sit down to discuss your campaign performance we won’t forget to report your cost per clicks and other metrics that most certainly can be important, but we also will work with your company to track the macro KPIs that determine true profitability on each ad set.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

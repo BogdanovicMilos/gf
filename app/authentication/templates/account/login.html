@@ -1,0 +1,61 @@
+{% extends "account/base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
+
+{% block content %}
+
+	{% if form.errors %}
+    {% for field in form %}
+      {% for error in field.errors %}
+        <div class="alert alert-soft-danger">
+          <strong>{{ error }}</strong>
+        </div>
+      {% endfor %}
+    {% endfor %}
+    {% for error in form.non_field_errors %}
+      <div class="alert alert-soft-danger">
+        <strong>{{ error }}</strong>
+      </div>
+    {% endfor %}
+  {% endif %}
+
+  <div class="text-center">
+    <div class="mb-5">
+      <h1>{% trans "Sign In" %}</h1>
+    </div>
+  </div>
+
+  <form class="login" id="login_form" method="post" action="{% url 'account_login' %}">
+    {% csrf_token %}
+
+    {% if redirect_field_value %}
+      <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+    {% endif %}
+
+    <div class="form-group">
+      <label class="input-label">Email</label>
+      <input type="email" class="form-control" placeholder="name@example.com" name="login">
+    </div>
+
+    <div class="form-group">
+      <span class="d-flex justify-content-between align-items-center">
+        Password
+        <a class="input-label-secondary" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+      </span>
+      <input type="password" class="form-control" name="password">
+    </div>
+
+    <div class="form-group">
+      <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="termsCheckbox" name="remember">
+          <label class="custom-control-label text-muted" for="termsCheckbox"> Remember me</label>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-lg btn-block btn-primary mb-2">
+      {% trans "Login" %}
+    </button>
+  </form>
+{% endblock %}

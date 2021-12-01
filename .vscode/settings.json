@@ -1,0 +1,88 @@
+{
+    // Editor
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.rulers": [
+            119
+        ]
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[css]": {
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.tabSize": 2
+    },
+
+    // Files ignored by vscode (in sidebar)
+    "files.exclude": {
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/__pycache__": true,
+        "**/.mypy_cache": true,
+        "**/.pytest_cache": true,
+        "**/.idea": true,
+        "**/*.py[co]": true
+    },
+
+    /*
+    Python
+     * Requires python plugin to be installed in vscode (ms-python.python).
+     * Requires virtual environment called `.venv` in project root dir
+     * with installed dependencies listed in `dev-requirements.txt`.
+     * `pip install -r dev-requirements.txt`
+    */
+    "python.pythonPath": ".venv/bin/python",
+    "python.linting.enabled": true,
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestArgs": [
+        "-W", "ignore::DeprecationWarning", "app/"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+        "--init-hook",
+        "import sys; sys.path.append('${workspaceFolder}/app')",
+        "--rcfile",
+        "${workspaceFolder}/backend/.pylintrc"
+    ],
+    "python.linting.banditEnabled": true,
+    "python.linting.banditArgs": [
+        "-x", "${workspaceFolder}/app/tests",
+        "-r", "${workspaceFolder}/app"
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": ["--config=${workspaceFolder}/app/.flake8"],
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--config-file", "${workspaceFolder}/app/mypy.ini"
+    ],
+    "python.linting.lintOnSave": true,
+    "python.analysis.diagnosticMode": "workspace",
+    "autoDocstring.docstringFormat": "google",
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["--line-length", "119", "--target-version", "py37"],
+
+    /*
+    JS
+     * Requires ESLint vscode plugin to be installed (dbaeumer.vscode-eslint).
+    */
+    "javascript.validate.enable" : false,
+    "eslint.enable": true,
+    "eslint.options": {
+        "configFile": "webpack/.eslintrc"
+    },
+    "eslint.validate": [
+        "vue",
+        "html",
+        "javascript"
+    ],
+
+    "files.associations": {
+        "*.css": "postcss"
+    }
+}

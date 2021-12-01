@@ -1,0 +1,167 @@
+/* Extra large devices (large screens, TV 1440px and up to 1921px) */
+
+@media (min-width: 1440px) {
+  .section_title {
+    font-size: 48px;
+  }
+
+  .page_title {
+    font-size: 64px;
+  }
+
+  .header__nav > ul > li + li {
+    margin-left: 40px;
+  }
+
+  .header .btn {
+    margin-left: 168px;
+  }
+
+  .footer::before,
+  .footer::after {
+    top: -370px;
+  }
+
+  .footer__top {
+    padding-right: 170px;
+  }
+
+  .footer__bot {
+    padding-left: 126px;
+  }
+
+  .service_hex__content {
+    padding: 20px 102px;
+  }
+
+  .intro__title {
+    max-width: 630px;
+  }
+
+  .article_page__aside {
+    margin-left: 10%;
+  }
+
+  /*
+	.about__benefits {
+		margin-top: -250px
+	}
+	*/
+  .about__benefits__itm-content {
+    padding: 0 79px;
+  }
+
+  .about__benefits__itm-ico {
+    width: 90px;
+  }
+
+  .about__benefits__itm-title {
+    font-size: 24px;
+  }
+
+  .about__benefits__itm-descr {
+    font-size: 20px;
+    margin-top: 24px;
+  }
+
+  .service_intro__img {
+    width: 49.7198879552%;
+    margin-left: auto;
+  }
+
+  .service_intro__text {
+    width: 50.2801120448%;
+  }
+
+  .service_intro__grid--small .service_intro__text {
+    width: 42.2969187675%;
+  }
+
+  .service_intro__grid--small .service_intro__img {
+    width: 54.2016806723%;
+  }
+
+  #stiky-img {
+    left: 50%;
+    max-width: 761px;
+  }
+
+  .service_hex_section .service_hex {
+    max-width: 640.64px;
+    max-height: 668.8px;
+  }
+
+  .service_benefits {
+    margin-bottom: -150px;
+  }
+
+  .service_benefits__itm-content {
+    padding: 0 79px;
+  }
+
+  .service_benefits__itm-ico {
+    width: 90px;
+  }
+
+  .service_benefits__itm-title {
+    font-size: 24px;
+  }
+
+  .service_benefits__itm-descr {
+    font-size: 20px;
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .home_about__itm-text {
+    font-size: 20px;
+  }
+
+  .home_about__itm-text__content {
+    padding: 77px 19.59%;
+  }
+
+  .service_hex_section .service_hex {
+    max-width: 728px;
+    max-height: 760px;
+  }
+
+  .service_article__picture--ml {
+    margin-left: -7%;
+  }
+
+  .service_article__picture--mr {
+    margin-right: -7%;
+  }
+
+  .service_short_article__img {
+    margin-left: -5.3%;
+  }
+}
+
+@media (min-width: 1921px) {
+  .footer {
+    margin-top: 225px;
+  }
+
+  .footer__top::before {
+    top: -425px;
+  }
+
+  .footer__bot::before {
+    top: -591px;
+  }
+
+  .home_news {
+    padding-bottom: 170px;
+  }
+
+  .service_benefits {
+    margin-bottom: 300px;
+  }
+
+  .supfooter {
+    margin-bottom: -50px;
+  }
+}

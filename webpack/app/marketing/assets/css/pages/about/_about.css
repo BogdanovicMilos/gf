@@ -1,0 +1,57 @@
+.about__intro .page_title {
+  margin-bottom: 22px;
+}
+
+.about__benefits {
+  text-align: center;
+  padding: 48px 0 100px;
+  background: url("../../../img/content/service_benefits_bg.svg") center top no-repeat;
+}
+
+.about__benefits--bot {
+  margin-top: 0;
+}
+
+.about__benefits--bot .section_title {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__benefits__subtitle {
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "RNSPhysis", sans-serif;
+  margin-top: 24px;
+}
+
+.about__benefits .container {
+  max-width: 1612px;
+}
+
+.about__benefits__itm-content {
+  display: flex;
+  display: flexbox;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  flex-align: center;
+  align-items: center;
+}
+
+.about__benefits__itm-title {
+  margin-top: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+  font-family: "RNSPhysis", sans-serif;
+}
+
+.about__benefits__itm-descr {
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 1.4;
+  z-index: 9;
+}

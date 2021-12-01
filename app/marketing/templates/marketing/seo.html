@@ -1,0 +1,200 @@
+{% extends 'marketing/base/base.html' %}
+
+{% load static %}
+
+{% block meta %}
+    <title>Search Engine Optimization Campaigns designed | growthfoundry.com</title>
+    <meta name="description" content="Whether you need franchise, enterprise or local SEO - we are your team. We've driven millions of visitors to web properties through our campaigns.">
+{% endblock %}
+
+{% block body %}
+
+    <div id="trigger-service">
+
+        <div id="stiky-img"  data-aos="fade" data-aos-delay="400">
+            <img src="{% static "marketing/img/content/seo.svg" %}" alt="">
+        </div>
+
+        <div id="trigger-service-section-1">
+            {% include 'marketing/includes/header.html' %}
+
+            <div class="container" data-aos="fade" data-aos-delay="700">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li>SEO</li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="service_intro service_intro--one_page">
+                <div class="container">
+                    <div class="service_intro__grid  service_intro__grid--small">
+                        <h2 class="section_title service_intro__title" data-da=".service_intro__title-pc, 1024" data-aos="fade-up" data-aos-delay="100">
+                            SEO
+                        </h2>
+                        <div class="service_intro__img">
+                            <img src="{% static "marketing/img/content/seo.svg" %}" alt="">
+                        </div>
+                        <div class="service_intro__text">
+                            <div class="service_intro__title-pc" data-aos="fade-up" data-aos-delay="150"></div>
+                            <div class="section_subtitle">
+                                The Best Investment you will Ever Make into your Digital Presence
+                            </div>
+                            <div class="richtext" data-aos="fade-up" data-aos-delay="200">
+                                <p>Our multi-billion dollar in net worth clientele relies on the high-performance output of Growth Foundry’s enterprise SEO team. Our strategy for large scale campaigns lies in our ability to rapidly deploy SEO changes, split tests, and optimizations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="service_hex_section" id="trigger-service-section-2">
+            <div class="container">
+                <div class="service_hex">
+                    <div class="service_hex__before">
+                        <svg viewBox="0 0 728 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#service_hex_shadow)">
+                                <path d="M364 0.000703209L6.10352e-05 116.012L728 116.012L364 0.000703209Z" fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="service_hex__content">
+                        <h2 class="section_title" data-aos="fade-up" data-aos-delay="200">
+                            Why Growth Foundry?
+                        </h2>
+                        <div class="section_subtitle" data-aos="fade-up" data-aos-delay="250">
+                            Our team of veteran SEOs has driven tens of millions of dollars in revenue for partners
+                        </div>
+                        <a href="{% url 'get_in_touch' %}" class="btn btn-main" data-aos="fade-up" data-aos-delay="300">
+                            Get in Toutch
+                        </a>
+                    </div>
+                    <div class="service_hex__after">
+                        <svg viewBox="0 0 728 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#service_hex_shadow)">
+                                <path d="M364 0.000703209L6.10352e-05 116.012L728 116.012L364 0.000703209Z" fill="white" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="service_article service_article--white_bg">
+        <div class="container">
+            <div class="service_article__row">
+                <h2 class="section_title service_article__title" data-da=".service_article__title-pc-01, 1024" data-aos="fade-up" data-aos-delay="100">
+                    A Local SEO Service You Can Bank On
+                </h2>
+                <div class="service_article__picture" data-aos="fade" data-aos-delay="100">
+                    <img src="{% static "marketing/img/content/image6.jpg" %}" alt="" class="service_article__picture-img">
+                    <div class="service_article__picture-label">
+                        Countless case studies back up our strategies
+                    </div>
+                </div>
+                <div class="service_article__text" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service_article__title-pc-01"></div>
+                    <div class="richtext">
+                        <p>Our team would happily compose an SEO roadmap you can use for your company. Get in touch and we show you the path to GUARANTEED ROI on your SEO campaigns.</p>
+                        <p>Writing copy for an SEO service can be a daunting task. There is such an expansive spectrum of offerings in the space. There are people who use outsourced shops to sell dangerous $99 per month packages and the whitest of white hat companies that write a few pieces of content per month and charge you $10k.</p>
+                        <p>We can be completely transparent in a space that is notoriously opaque and show you the time and effort we put into every aspect of your campaign. Growth Foundry has ranked hundreds of websites in some of the most competitive niches on the planet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_article service_article--gradient_bg">
+        <div class="container">
+            <div class="service_article__row service_article__row--reverse">
+                <h2 class="section_title service_article__title" data-da=".service_article__title-pc-02, 1024" data-aos="fade-up" data-aos-delay="100">
+                    Research, Development, Experimentation, Refinement, Deployment
+                </h2>
+                <div class="service_article__picture service_article__picture--ml" data-aos="fade" data-aos-delay="100">
+                    <img src="{% static "marketing/img/content/service_article-hex-1.svg" %}" alt="" class="service_article__picture-decor service_article__picture-decor--1">
+                    <img src="{% static "marketing/img/content/image7.jpg" %}" alt="" class="service_article__picture-img">
+                    <div class="service_article__picture-label">
+                        Countless case studies back up our strategies
+                    </div>
+                </div>
+                <div class="service_article__text">
+                    <div class="service_article__title-pc-02"></div>
+                    <div class="richtext" data-aos="fade-up" data-aos-delay="150">
+                        <p>Have you ever pursued the endless list of Google patents that pertain to search engine optimization? We do that work for you.</p>
+                        <p>Let me explain.</p>
+                        <p>We employ a small team dedicated to researching patents and organizing testing methodology based on their findings. This team of strategists also regularly tests popular SEO theory. This investment in personnel means we stay cutting edge and have been labeled as thought leaders in the space.</p>
+                        <p>Oversimplification of SEO strategy as put forth by most firms is indicative of either recycled “best practice” SEO ideas or varying levels of confusion when it comes to the many cogs required to manufacture a ranking machine. When it comes to constant testing and research into the mechanics of search engines, we go above and beyond.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_article">
+        <div class="container">
+            <div class="service_article__row service_article__row--iceberg">
+                <h2 class="section_title service_article__title" data-da=".service_article__title-pc-03, 768" data-aos="fade-up" data-aos-delay="100">
+                    A True Technical Analysis and Overhaul
+                </h2>
+                <div class="service_article__picture" data-aos="fade" data-aos-delay="100">
+                    <img src="{% static "marketing/img/content/image.svg" %}" alt="" class="service_article__picture-img">
+                </div>
+                <div class="service_article__text">
+                    <div class="service_article__title-pc-03"></div>
+                    <div class="richtext" data-aos="fade-up" data-aos-delay="150">
+                        <p>Most of the time when an agency prepares a technical report for you it is the run of the mill cookie cutter crawl analysis that tells you if your meta description is too short or if your website has response code errors. It has its place of importance but we blend a true development experience with the technical savvy SEO acumen that you would expect from a shop consisting of engineers and developers.</p>
+                        <p>Is your custom Angular2 website app rendering content in a way in which Google can crawl and understand? Are your internationalization efforts being foiled by improper hreflang tags? Do you find server configurations or mobile complications causing a slow arrival at your first contentful paint? Is this in turn causing your site to be auditioned less for users on specific devices?</p>
+                        <p>Our several hundred point auditing system combined with dozens of manual hours and a proprietary stack of technology means your SEO campaign will be built upon a truly technical sound foundation. There are some extremely impressive SEO companies out there but none of them quite do it like us</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service_content_marketing">
+        <div class="container">
+            <div class="service_content_marketing__title">
+                <div class="section_title" data-aos="fade-up" data-aos-delay="100">
+                    Content Marketing without the Buzzword BS
+                </div>
+                <img src="{% static "marketing/img/content/service_article-hex-2.svg" %}" alt="" class="service_content_marketing__title-decor">
+            </div>
+            <div class="service_content_marketing__row">
+                <div class="service_content_marketing__picture" data-aos="fade" data-aos-delay="100">
+                    <img src="{% static "marketing/img/content/image8.jpg" %}" alt="">
+                </div>
+                <div class="service_content_marketing__text richtext" data-aos="fade-up" data-aos-delay="105">
+                    <p>All points in the buying process should be represented with content. We cover the mouth of the funnel through identifying which informational queries need resolved and creating a content plan based on data. Optimizing and enhancing content by structuring data to be displayed with priority in search engines and ensuring your content is built in a way that appeases the wants and needs of search engines and users alike is our mission.</p>
+                </div>
+            </div>
+            <div class="service_content_marketing__columns">
+                <div class="left_column" data-aos="fade-up" data-aos-delay="250">
+                    <p>Content marketing has become a general buzzword that could encompass a number of things. For us, it is a true analytical experience where we research what content gaps your website suffers. We reverse engineer what queries you should be targeting and if you have the content to do so.</p>
+                </div>
+                <div class="right_column" data-aos="fade-up" data-aos-delay="300">
+                    <p>We accomplish this through data supported content plans. AI models allow us to determine user intent, tone, and sentiment of the content. Analyzing large datasets of relevant content and their performance in search engines gives us a base set of content in which we can extract semantic clusters, terms, and words from to ensure our content is optimized to qualify to be auditioned at the top of the SERPs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="supfooter">
+        <div class="container">
+            <div class="supfooter__content">
+                <div class="section_title" data-aos="fade-up" data-aos-delay="100">
+                    Let’s Build you the Last SEO Plan you Will Ever Need
+                </div>
+                <div class="richtext" data-aos="fade-up" data-aos-delay="150">
+                    <p>Some of this might sound esoteric or foreign so you might want to see how this looks in an actual roadmap for your specific campaign. Let’s connect and we will reverse the opaque norms that have become commonplace in SEO methodology and show you exactly what we need to do to get your website performing at the top of search engines for ROI producing terms.</p>
+                </div>
+                <a href="{% url 'get_in_touch' %}" class="btn btn-main" data-aos="fade" data-aos-delay="500">
+                    Get in Toutch
+                </a>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

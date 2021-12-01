@@ -1,0 +1,9 @@
+{% extends 'dashboard/base.html' %}
+
+{% load static %}
+
+{% block nav_websites %}show{% endblock %}
+
+{% block content %}
+   <div class='websites-table' data-client-id="{{ client_id }}"></div>
+{% endblock %}

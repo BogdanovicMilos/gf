@@ -1,0 +1,339 @@
+.home_info {
+  padding: 37px 0;
+}
+
+.home_info .section_title {
+  grid-area: title;
+}
+
+.home_info .section_subtitle {
+  margin-bottom: 17px;
+}
+
+.home_info__grid {
+  display: grid;
+  display: grid;
+  grid-gap: 17px;
+  grid-template-areas: "title" "img" "text";
+}
+
+.home_info__img {
+  grid-area: img;
+  display: flex;
+  display: flexbox;
+  display: flex;
+  align-items: center;
+  flex-align: center;
+  align-items: center;
+}
+
+.home_info__img img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  flex-shrink: 0;
+  flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.home_info__text {
+  grid-area: text;
+}
+
+.home_about .container {
+  max-width: 1727px;
+}
+
+.home_about__itm_wrap {
+  display: flex;
+  display: flexbox;
+  display: flex;
+  align-items: center;
+  flex-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-pack: center;
+  justify-content: center;
+}
+
+.home_about__itm {
+  display: grid;
+  display: grid;
+  width: 100%;
+  grid-gap: 32px;
+  grid-template-areas: "title" "img" "text";
+  padding: 32px 0;
+  flex-shrink: 0;
+  flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.home_about__itm--reverse .home_about__itm-num {
+  left: 5px;
+}
+
+.home_about__itm .section_title {
+  grid-area: title;
+  background: linear-gradient(90deg, #234dae, #347bce);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 5px;
+  position: relative;
+  z-index: 1;
+}
+
+.home_about__itm-img {
+  grid-area: img;
+}
+
+.home_about__itm-img img {
+  max-width: calc(100% + 12px);
+  margin-left: -6px;
+}
+
+.home_about__itm-text {
+  grid-area: text;
+  position: relative;
+  z-index: 1;
+}
+
+.home_about__itm-text__bg {
+  display: none;
+  position: absolute;
+  overflow: visible;
+  z-index: -1;
+  top: 0;
+  left: 15.5603917301%;
+  right: 15.5603917301%;
+  bottom: 0;
+  background-color: #fff;
+  box-shadow: 0 20px 20px rgb(48 79 149 / 5%);
+}
+
+.home_about__itm-text__bg::before,
+.home_about__itm-text__bg::after {
+  content: "";
+  position: absolute;
+  width: 24.33%;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  background: url("../../../img/home_about_hex_triangle-right.png") 0 50%;
+  background-size: 100% 100%;
+}
+
+.home_about__itm-text__bg::before {
+  right: 100%;
+  transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.home_about__itm-text__bg::after {
+  left: 100%;
+}
+
+.home_about__itm-text__decor {
+  display: none;
+}
+
+.home_about__itm-text__decor::before,
+.home_about__itm-text__decor::after {
+  content: "";
+  width: 226px;
+  width: 24.5919477693%;
+  height: 46px;
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjI3IiBoZWlnaHQ9IjQ5IiB2aWV3Qm94PSIwIDAgMjI3IDQ5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBvcGFjaXR5PSIwLjIiIGQ9Ik0yMjYuMjUgNDcuODk0NUwxMTMuNSAyTDAuNzUgNDcuODk0NSIgc3Ryb2tlPSIjMzA0Rjk1IiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==") center bottom no-repeat;
+  background-size: contain;
+}
+
+.home_about__itm-text__decor::before {
+  top: -43px;
+}
+
+.home_about__itm-text__decor::after {
+  bottom: -43px;
+  transform: translateX(-50%) scaleY(-1);
+  transform: translateX(-50%) scaleY(-1);
+}
+
+.home_about__itm-num {
+  display: none;
+  font-family: "RNSPhysis", sans-serif;
+  letter-spacing: -0.02em;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  position: absolute;
+  z-index: -1;
+  left: 19px;
+  top: -40px;
+}
+
+.home_about__itm-num .current {
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-top: -0.3em;
+  font-weight: 900;
+  background: linear-gradient(90deg, #347bce, #234dae);
+  background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color: #fafafa;
+  font-size: 210px;
+}
+
+.home_news {
+  padding: 50px 0 71px;
+}
+
+.home_news__header {
+  display: flex;
+  display: flexbox;
+  display: flex;
+  align-items: baseline;
+  flex-align: baseline;
+  align-items: baseline;
+}
+
+.home_news__header .section_title {
+  flex-grow: 1;
+  flex-positive: 1;
+  flex-grow: 1;
+}
+
+.home_news__more_link {
+  font-size: 12px;
+  color: #304f95;
+  font-weight: 700;
+  font-family: "RNSPhysis", sans-serif;
+  line-height: 1.1;
+  position: relative;
+  display: none;
+}
+
+.home_news__more_link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  height: 2px;
+  background-color: #304f95;
+  transition: left 0.35s ease, right 0.35s ease;
+  bottom: -10px;
+}
+
+.home_news__more_link:hover {
+  color: #304f95;
+}
+
+.home_news__more_link:hover::after {
+  left: 0;
+  right: 0;
+}
+
+.home_news__slider_wrap {
+  overflow: hidden;
+}
+
+.home_news__slider {
+  margin-top: 24px;
+  margin-right: 6%;
+}
+
+.home_news__slider-list {
+  display: flex;
+  display: flexbox;
+  display: flex;
+}
+
+.home_news__itm {
+  flex-shrink: 0;
+  flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 12px;
+  display: flex;
+  display: flexbox;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  flex-direction: column;
+}
+
+.home_news__itm-img {
+  position: relative;
+}
+
+.home_news__itm-img::after {
+  content: "";
+  display: block;
+  padding-bottom: 54.3806646526%;
+}
+
+.home_news__itm-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.home_news__itm-info {
+  position: relative;
+  padding: 10px;
+  border-top: 1px solid #f0f0f0;
+  flex-grow: 1;
+  flex-positive: 1;
+  flex-grow: 1;
+  display: flex;
+  display: flexbox;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  flex-direction: column;
+}
+
+.home_news__itm-info::before,
+.home_news__itm-info::after {
+  content: "";
+  width: 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, #f0f0f0, rgb(240 240 240 / 0%));
+}
+
+.home_news__itm-info::before {
+  left: 0;
+}
+
+.home_news__itm-info::after {
+  right: 0;
+}
+
+.home_news__itm-title {
+  color: #304f95;
+  font-size: 24px;
+  line-height: 1.1;
+  font-family: "RNSPhysis", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.1em;
+}
+
+.home_news__itm-descr {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.home_news__itm-meta {
+  color: rgb(52 59 67 / 50%);
+  font-size: 13px;
+  margin-top: auto;
+  padding-top: 19.2px;
+}

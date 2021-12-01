@@ -1,0 +1,4 @@
+@import "_tablets.css"; /* Tablet devices (phones, 768px and down) */
+@import "_laptops.css"; /* Medium devices (landscape tablets, 768px and up to 1023px) */
+@import "_desktops.css"; /* Large devices (desktops, 1024px and up to 1200px) */
+@import "_tvs.css"; /* Extra large devices (large screens, TV 1440px and up to 1921px) */

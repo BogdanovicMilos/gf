@@ -1,0 +1,244 @@
+.footer {
+  font-family: "RNSPhysis", sans-serif;
+  position: relative;
+}
+
+.footer .section_title {
+  letter-spacing: -0.02em;
+}
+
+.footer__top {
+  color: #fff;
+  position: relative;
+  padding: 30px 0 57px;
+}
+
+.footer__top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(146.83deg, #234dae 8.11%, #347bce 90.67%);
+  pointer-events: none;
+}
+
+.footer__top .section_title {
+  color: inherit;
+}
+
+.footer__top .footer__copyright {
+  display: none;
+}
+
+.footer__nav {
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+  line-height: 175%;
+  max-width: 440px;
+}
+
+.footer__nav .section_title {
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.footer__nav a {
+  position: relative;
+}
+
+.footer__nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  right: 50%;
+  height: 2px;
+  background: #fff;
+  transition: left 0.35s ease, right 0.35s ease;
+}
+
+.footer__nav a:hover::after {
+  left: 0;
+  right: 0;
+}
+
+.footer__form {
+  margin-top: 52px;
+}
+
+.footer__form .section_title {
+  margin-bottom: 12px;
+}
+
+.footer__form-field {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.footer__form-field input {
+  border: 0;
+  border-bottom: 2px solid #fff;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  width: 100%;
+  height: 54px;
+  display: block;
+  padding-left: 46px;
+}
+
+.footer__form-field input::input-placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+
+.footer__form-field input::placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+
+.footer__form-field input:input-placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+
+.footer__form-field input::placeholder {
+  color: #fff;
+  font-weight: 300;
+}
+
+.footer__form-field svg {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.footer__form .btn {
+  margin-top: 32px;
+  height: 64px;
+  padding: 0 48px;
+  font-size: 20px;
+  font-family: "HelveticaNeueCyr", sans-serif;
+}
+
+.footer__bot {
+  padding: 40px 0 20px;
+}
+
+.footer__bot .section_title {
+  color: #343b43;
+  margin-bottom: 26px;
+}
+
+.footer__contacts {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.footer__contacts b {
+  font-weight: 700;
+  font-size: 22px;
+  display: block;
+  letter-spacing: -0.02em;
+  color: #343b43;
+}
+
+.footer__contacts p + p {
+  margin-top: 22px;
+}
+
+.footer__contacts a {
+  position: relative;
+}
+
+.footer__contacts a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  right: 50%;
+  height: 2px;
+  background: linear-gradient(56.83deg, #2323ae 8.11%, #347bce 90.67%);
+  transition: left 0.35s ease, right 0.35s ease;
+}
+
+.footer__contacts a:hover {
+  color: #304f95;
+}
+
+.footer__contacts a:hover::after {
+  left: 0;
+  right: 0;
+}
+
+.footer__map {
+  height: 250px;
+  background-color: #ccc;
+  margin-top: 20px;
+}
+
+.footer__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.footer__soc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  display: flex;
+  display: flexbox;
+  display: flex;
+  margin-top: 36px;
+}
+
+.footer__soc a + a {
+  margin-left: 25px;
+}
+
+.footer__soc a {
+  display: inline-block;
+  position: relative;
+  padding: 7px 0;
+  margin-bottom: -7px;
+}
+
+.footer__soc a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  height: 2px;
+  background: linear-gradient(56.83deg, #2323ae 8.11%, #347bce 90.67%);
+  transition: left 0.35s ease, right 0.35s ease;
+}
+
+.footer__soc a:hover {
+  color: #304f95;
+}
+
+.footer__soc a:hover::after {
+  left: 0;
+  right: 0;
+}
+
+.footer__copyright {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 10px;
+  letter-spacing: -0.02em;
+  margin-top: 31px;
+}

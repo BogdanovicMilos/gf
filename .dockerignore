@@ -1,0 +1,10 @@
+webpack/node_modules/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.vscode/
+.idea/
+*.log
+reports/

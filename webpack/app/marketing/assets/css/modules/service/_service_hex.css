@@ -1,0 +1,121 @@
+.service_hex {
+  display: flex;
+  display: flexbox;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  flex-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.service_hex__content {
+  position: relative;
+  padding: 10px 32px;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  flex-positive: 1;
+  flex-grow: 1;
+  z-index: 1;
+  display: flex;
+  display: flexbox;
+  display: flex;
+  align-items: center;
+  flex-align: center;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: column;
+  flex-direction: column;
+  justify-content: center;
+  flex-pack: center;
+  justify-content: center;
+}
+
+.service_hex__content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -2px;
+  bottom: -2px;
+  background-color: #fff;
+  box-shadow: 0 4px 80px rgb(0 0 0 / 10%);
+  z-index: -1;
+}
+
+.service_hex .section_title {
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.service_hex .section_subtitle {
+  margin-top: 25px;
+}
+
+.service_hex .btn {
+  height: 60px;
+  font-size: 16px;
+  padding: 0 50px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.service_hex__before,
+.service_hex__after {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  line-height: 0;
+  display: block;
+  flex-shrink: 0;
+  flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.service_hex__before::before,
+.service_hex__after::before {
+  content: "";
+  display: block;
+  padding-bottom: 16.0714285714%;
+}
+
+.service_hex__before::after,
+.service_hex__after::after {
+  content: "";
+  width: 49.1071428571%;
+  height: 33px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ4IiBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMTQ4IDM0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNzQuNzQ0NiAwLjI5ODY1MkM3NC4yNjY3IDAuMTA2OTc3IDczLjczMzQgMC4xMDY5NzcgNzMuMjU1NSAwLjI5ODY1MkwxLjM0MTY1IDI5LjE0MzhDLTAuNzAxMTkyIDI5Ljk2MzIgLTAuMTE0ODQgMzMgMi4wODYyMSAzM0wxNDUuOTE0IDMzQzE0OC4xMTUgMzMgMTQ4LjcwMSAyOS45NjMxIDE0Ni42NTggMjkuMTQzN0w3NC43NDQ2IDAuMjk4NjUyWiIgZmlsbD0iIzMwNEY5NSIvPgo8L3N2Zz4K") center top no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.service_hex__before svg,
+.service_hex__after svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+.service_hex__after {
+  transform: scaleY(-1);
+  transform: scaleY(-1);
+  bottom: 0;
+}
+
+.service_hex__before {
+  top: 0;
+}

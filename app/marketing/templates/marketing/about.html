@@ -1,0 +1,249 @@
+{% extends 'marketing/base/base.html' %}
+
+{% load static %}
+
+{% block meta %}
+    <title>About Us | growthfoundry.com</title>
+    <meta name="description" content="About Growth Foundry Digital Marketing: SEO and Facebook Advertising Firm.">
+{% endblock %}
+
+{% block body %}
+
+    {% include 'marketing/includes/header.html' %}
+
+    <div class="container" data-aos="fade" data-aos-delay="700">
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li>About Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="about">
+        <div class="container">
+            <div class="about__intro">
+                <h1 class="page_title" data-aos="fade-up" data-aos-delay="100">
+                    A bit about growth foundry
+                </h1>
+                <div class="richtext" data-aos="fade-up" data-aos-delay="150">
+                    <p>Most agencies take this opportunity to tell you a lot about themselves.</p>
+                    <p>There would be a list of generic services that mirror every other digital marketing agency, and the entire goal of the page would be to convert you into a boring 90-minute presentation that tells you the value of being mobile-optimized or how there are a lot of people using social media. </p>
+                    <p>Our team designs a definitive roadmap for your company to supercharge your digital marketing efforts. We provide a transparent and measurable gameplan. We promise, you have never seen anything quite like this, and the results are unmatched. </p>
+                </div>
+            </div>
+        </div>
+        <div class="about__benefits">
+            <div class="container">
+                <div class="about__benefits__list" data-aos-delay="250" data-aos="fade">
+                    <div class="about__benefits__itm about__benefits__itm--1">
+                        <div class="about__benefits__itm-content_wrap">
+                            <div class="about__benefits__itm-content">
+                            <img src="{% static "marketing/img/content/about/1.svg" %}" width="90" height="90" alt="" class="about__benefits__itm-ico" data-aos="fade" data-aos-delay="500">
+                            <div class="about__benefits__itm-title" data-aos="fade-up" data-aos-delay="550">
+                                Software
+                            </div>
+                            <div class="about__benefits__itm-descr"  data-aos="fade-up" data-aos-delay="600">
+                                We design and develop enterprise software and have brought multiple products to market over the last decade. As a partner, Growth Foundry brings a technical depth unmatched amongst the digital marketing community.
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__benefits__itm about__benefits__itm--2">
+                        <div class="about__benefits__itm-content_wrap">
+                            <div class="about__benefits__itm-content">
+                            <img src="{% static "marketing/img/content/about/2.svg" %}" width="90" height="90" alt="" class="about__benefits__itm-ico" data-aos="fade" data-aos-delay="500">
+                            <div class="about__benefits__itm-title" data-aos="fade-up" data-aos-delay="550">
+                                Agency Growth
+                            </div>
+                            <div class="about__benefits__itm-descr"  data-aos="fade-up" data-aos-delay="600">
+                                We love to help other agency owners grow their businesses and believe in giving back to the community through running free training webinars, publishing guides, providing valuable marketing content, and hosting in person seminars.
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__benefits__itm about__benefits__itm--3">
+                        <div class="about__benefits__itm-content_wrap">
+                            <div class="about__benefits__itm-content">
+                            <img src="{% static "marketing/img/content/about/3.svg" %}" width="90" height="90" alt="" class="about__benefits__itm-ico" data-aos="fade" data-aos-delay="100">
+                            <div class="about__benefits__itm-title" data-aos="fade-up" data-aos-delay="150">
+                                Media Buying
+                            </div>
+                            <div class="about__benefits__itm-descr"  data-aos="fade-up" data-aos-delay="200">
+                                Growth Foundry has planned and purchased media for some of the biggest names in online marketing, software and retail. We've helped generate hundreds of millions of dollars from our ad campaigns and can help your business next.
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__benefits__itm about__benefits__itm--4">
+                        <div class="about__benefits__itm-content_wrap">
+                            <div class="about__benefits__itm-content">
+                            <img src="{% static "marketing/img/content/about/4.svg" %}" width="90" height="90" alt="" class="about__benefits__itm-ico" data-aos="fade" data-aos-delay="100">
+                            <div class="about__benefits__itm-title" data-aos="fade-up" data-aos-delay="150">
+                                Search Engine Optimization
+                            </div>
+                            <div class="about__benefits__itm-descr"  data-aos="fade-up" data-aos-delay="200">
+                                We have deep roots in the SEO industry and have decades of combined experience building and executing SEO campaigns in a variety of industries. From technical SEO, local and national SEO and everything inbetween - we are experienced and battle tested SEOs.
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% comment %}
+    <section class="team">
+        <div class="container">
+            <h2 class="section_title" data-aos="fade-up" data-aos-delay="100">Growth Foundry Star-Team</h2>
+            <div class="team__list">
+                <div class="team__itm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team__itm-thumb">
+                        <img src="{% static "marketing/img/content/ava-0.jpg" %}" alt="">
+                        <img src="{% static "marketing/img/content/ava-1.png" %}" alt="">
+                    </div>
+                    <div class="team__itm-info">
+                        <div class="team__itm-name">Mark Lackenbaugh</div>
+                        <div class="team__itm-post">managing partner</div>
+                        <div class="team__itm-soc">
+                            <a href="#"><img src="{% static "marketing/img/content/linkedin.svg" %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__itm" data-aos="fade-up" data-aos-delay="150">
+                    <div class="team__itm-thumb">
+                        <img src="{% static "marketing/img/content/ava-0.jpg" %}" alt="">
+                        <img src="{% static "marketing/img/content/ava-1.png" %}" alt="">
+                    </div>
+                    <div class="team__itm-info">
+                        <div class="team__itm-name">Mark Lackenbaugh</div>
+                        <div class="team__itm-post">managing partner</div>
+                        <div class="team__itm-soc">
+                            <a href="#"><img src="{% static "marketing/img/content/linkedin.svg" %%}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__itm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team__itm-thumb">
+                        <img src="{% static "marketing/img/content/ava-0.jpg" %}" alt="">
+                        <img src="{% static "marketing/img/content/ava-1.png" %}" alt="">
+                    </div>
+                    <div class="team__itm-info">
+                        <div class="team__itm-name">Mark Lackenbaugh</div>
+                        <div class="team__itm-post">managing partner</div>
+                        <div class="team__itm-soc">
+                            <a href="#"><img src="{% static "marketing/img/content/linkedin.svg" %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__itm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team__itm-thumb">
+                        <img src="{% static "marketing/img/content/ava-0.jpg" %}" alt="">
+                        <img src="{% static "marketing/img/content/ava-1.png" %}" alt="">
+                    </div>
+                    <div class="team__itm-info">
+                        <div class="team__itm-name">Mark Lackenbaugh</div>
+                        <div class="team__itm-post">managing partner</div>
+                        <div class="team__itm-soc">
+                            <a href="#"><img src="{% static "marketing/img/content/linkedin.svg" %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__itm" data-aos="fade-up" data-aos-delay="150">
+                    <div class="team__itm-thumb">
+                        <img src="{% static "marketing/img/content/ava-0.jpg" %}" alt="">
+                        <img src="{% static "marketing/img/content/ava-1.png" %}" alt="">
+                    </div>
+                    <div class="team__itm-info">
+                        <div class="team__itm-name">Mark Lackenbaugh</div>
+                        <div class="team__itm-post">managing partner</div>
+                        <div class="team__itm-soc">
+                            <a href="#"><img src="{% static "marketing/img/content/linkedin.svg" %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__itm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team__itm-thumb">
+                        <img src="{% static "marketing/img/content/ava-0.jpg" %}" alt="">
+                        <img src="{% static "marketing/img/content/ava-1.png" %}" alt="">
+                    </div>
+                    <div class="team__itm-info">
+                        <div class="team__itm-name">Mark Lackenbaugh</div>
+                        <div class="team__itm-post">managing partner</div>
+                        <div class="team__itm-soc">
+                            <a href="#"><img src="{% static "marketing/img/content/linkedin.svg" %}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endcomment %}
+
+    <div class="about__benefits about__benefits--bot">
+        <h2 class="section_title" data-aos="fade-up" data-aos-delay="100">
+            Our values drive every interaction we have with clients
+        </h2>
+        <div class="about__benefits__subtitle" data-aos="fade-up" data-aos-delay="150">
+            We see ourselves as an extension of your business.
+        </div>
+        <div class="container">
+            <div class="about__benefits__list">
+                <div class="about__benefits__itm about__benefits__itm--21">
+                    <div class="about__benefits__itm-content_wrap">
+                        <div class="about__benefits__itm-content">
+                            <img src="{% static "marketing/img/content/about/5.svg" %}" width="90" height="90" alt="" class="about__benefits__itm-ico" data-aos="fade" data-aos-delay="100">
+                            <div class="about__benefits__itm-title" data-aos="fade-up" data-aos-delay="150">
+                                Be Accountable
+                            </div>
+                            <div class="about__benefits__itm-descr" data-aos="fade-up" data-aos-delay="200">
+                                We aim to be as open and honest as possible while we work together and form a long term partnership
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__benefits__itm about__benefits__itm--22">
+                    <div class="about__benefits__itm-content_wrap">
+                        <div class="about__benefits__itm-content">
+                            <img src="{% static "marketing/img/content/about/6.svg" %}" width="80" height="80" alt="" class="about__benefits__itm-ico" data-aos="fade" data-aos-delay="100">
+                            <div class="about__benefits__itm-title" data-aos="fade-up" data-aos-delay="150">
+                                Create Partnerships
+                            </div>
+                            <div class="about__benefits__itm-descr" data-aos="fade-up" data-aos-delay="200">
+                                We treat your business as if it was our own and see you as a partner when you engage with us
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__benefits__itm about__benefits__itm--23">
+                    <div class="about__benefits__itm-content_wrap">
+                        <div class="about__benefits__itm-content">
+                            <img src="{% static "marketing/img/content/about/7.svg" %}" width="80" height="80" alt="" class="about__benefits__itm-ico" data-aos="fade" data-aos-delay="100">
+                            <div class="about__benefits__itm-title" data-aos="fade-up" data-aos-delay="150">
+                                Drive Growth
+                            </div>
+                            <div class="about__benefits__itm-descr" data-aos="fade-up" data-aos-delay="200">
+                                At the end of the day, our goal is to create growth for your business
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__benefits__itm about__benefits__itm--24">
+                    <div class="about__benefits__itm-content_wrap">
+                        <div class="about__benefits__itm-content">
+                            <img src="{% static "marketing/img/content/about/8.svg" %}" width="80" height="80" alt="" class="about__benefits__itm-ico" data-aos="fade" data-aos-delay="100">
+                            <div class="about__benefits__itm-title" data-aos="fade-up" data-aos-delay="150">
+                                See Details
+                            </div>
+                            <div class="about__benefits__itm-descr" data-aos="fade-up" data-aos-delay="200">
+                                The details mean everything in successful digital campaigns...we pay close attention to them
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

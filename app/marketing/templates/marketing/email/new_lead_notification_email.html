@@ -1,0 +1,16 @@
+<ul>
+    <li>Full Name: <strong>{{ full_name }}</strong></li>
+    <li>Phone Number: <strong>{{ phone_number }}</strong></li>
+    {% if email_address %}
+      <li>Email: <strong>{{ email_address }}</strong></li>
+    {% endif %}
+    {% if website %}
+      <li>Website: <strong>{{ website }}</strong></li>
+    {% endif %}
+    {% if monthly_ad_budget %}
+      <li>Monthly Ad Budget: <strong>{{ monthly_ad_budget }}</strong></li>
+    {% endif %}
+    {% if message %}
+      <li>Message: <strong>{{ message }}</strong></li>
+    {% endif %}
+</ul>

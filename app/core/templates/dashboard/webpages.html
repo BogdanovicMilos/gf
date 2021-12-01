@@ -1,0 +1,9 @@
+{% extends 'dashboard/base.html' %}
+
+{% load static %}
+
+{% block nav_webpages %}show{% endblock %}
+
+{% block content %}
+   <div class='webpages-table' data-website-id="{{ website_id }}"></div>
+{% endblock %}

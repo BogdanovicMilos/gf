@@ -1,0 +1,99 @@
+{% extends 'marketing/base/base.html' %}
+
+{% load static %}
+
+{% block meta %}
+    <title>Contact Growth Foundry | growthfoundry.com</title>
+    <meta name="description" content="Contact Growth Foundry via email or phone.">
+{% endblock %}
+
+{% block body %}
+
+    {% include 'marketing/includes/header.html' %}
+
+    <div class="container" data-aos="fade" data-aos-delay="700">
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li>Contacts</li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__info">
+                <h1 class="page_title" data-aos="fade-up" data-aos-delay="100">
+                    Get in touch with us:
+                </h1>
+                <div class="contacts__itm">
+                    <h2 class="section_title" data-aos="fade-up" data-aos-delay="150">
+                        <b>Business inquiries</b>
+                    </h2>
+                    <div class="contacts__itm-links">
+                        <p data-aos="fade-up" data-aos-delay="200">
+                            <a href="mailto:inquiries@growthfoundry.com">inquiries@growthfoundry.com</a>
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="250">
+                            <a href="tel:+18557406984">+1 (855) 740 6984</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="contacts__itm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contacts__itm-header" >
+                        <h2 class="section_title">
+                            <b>Tech Support</b>
+                        </h2>
+                        <div class="contacts__itm-note pc">
+                            <svg width="24" height="24" class="svg-ico">
+                                <use xlink:href="{% static "marketing/img/sprite.svg" %}#ico-time"></use>
+                            </svg>
+                            1-2 business days to get answer
+                            <svg  viewBox="0 0 182 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="contacts__itm-note__bg">
+                                <path d="M2.2553 32.6128L16.3697 52.6127C17.8686 54.7368 20.3062 56 22.9059 56L159.094 56C161.694 56 164.131 54.7368 165.63 52.6127L179.745 32.6127C181.696 29.8472 181.696 26.1528 179.745 23.3872L165.63 3.38725C164.131 1.26321 161.694 -3.29687e-06 159.094 -3.18324e-06L22.9059 2.76974e-06C20.3062 2.88337e-06 17.8686 1.26322 16.3697 3.38725L2.2553 23.3872C0.303633 26.1528 0.303633 29.8472 2.2553 32.6128Z" fill="white" filter="url(#filter_note_shadow)" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="contacts__itm-links">
+                        <p data-aos="fade-up" data-aos-delay="200">
+                            <a href="mailto:support@growthfoundry.com">support@growthfoundry.com</a>
+                        </p>
+                        <p data-aos="fade-up" data-aos-delay="250">
+                            <a href="tel:+17172193480">+1 (717) 219-3480</a>
+                        </p>
+                    </div>
+                    <div class="contacts__itm-note mob">
+                        <svg width="24" height="24" class="svg-ico">
+                            <use xlink:href="{% static "marketing/img/sprite.svg" %}#ico-time"></use>
+                        </svg>
+                        1-2 business days to get answer
+                        <svg  viewBox="0 0 182 56" fill="none" xmlns="http://www.w3.org/2000/svg" class="contacts__itm-note__bg">
+                            <path d="M2.2553 32.6128L16.3697 52.6127C17.8686 54.7368 20.3062 56 22.9059 56L159.094 56C161.694 56 164.131 54.7368 165.63 52.6127L179.745 32.6127C181.696 29.8472 181.696 26.1528 179.745 23.3872L165.63 3.38725C164.131 1.26321 161.694 -3.29687e-06 159.094 -3.18324e-06L22.9059 2.76974e-06C20.3062 2.88337e-06 17.8686 1.26322 16.3697 3.38725L2.2553 23.3872C0.303633 26.1528 0.303633 29.8472 2.2553 32.6128Z" fill="white" filter="url(#filter_note_shadow)" />
+                        </svg>
+                    </div>
+                </div>
+                <button class="btn btn-main" data-fancybox data-src="#popup-contact"  data-aos="fade-up" data-aos-delay="300">
+                    <svg width="30" height="30" class="svg-ico">
+                        <use xlink:href="{% static "marketing/img/sprite.svg" %}#ico-mail"></use>
+                    </svg>Send Us a Message
+                </button>
+                <div class="popup" id="popup-contact" style="display: none;">
+                    <div class="popup__title section_title">Send Us a Message</div>
+                    <div class="send-us-a-message"></div>
+                </div>
+            </div>
+            <div class="contacts__map_wrap"  data-aos="fade" data-aos-delay="300">
+                <div class="contacts__map">
+                    <div class="contacts__map-inner-1">
+                        <div class="contacts__map-inner-2">
+                            <div class="contacts__map-inner-3">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1569172.0924801463!2d-78.10224652352501!3d39.811719084149736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c85a247904d6df%3A0x391f3e7d71c5aa5b!2sHanover%2C%20PA%2017331%2C%20USA!5e0!3m2!1sen!2srs!4v1637674490785!5m2!1sen!2srs" width="770" height="834" style="border:0; margin-top: -27px;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+<div class="menu">
+    <div class="container">
+        <div class="menu__nav">
+        <ul>
+            <li class="has-submenu">
+            <a href="#">Media Buying</a>
+            <ul>
+                <li><a href="{% url 'media_buying' %}">Media Buying</a></li>
+                <li><a href="{% url 'facebook_ads' %}">Facebook Ads</a></li>
+                <li><a href="{% url 'google_ads' %}">Google Ads</a></li>
+            </ul>
+            </li>
+            <li class="has-submenu">
+            <a href="#">Search</a>
+            <ul>
+                <li><a href="{% url 'enterprise_seo' %}">Enterprise SEO</a></li>
+                <li><a href="{% url 'local_seo' %}">Local SEO</a></li>
+                <li><a href="{% url 'seo' %}">Search Engine Optimization</a></li>
+            </ul>
+            </li>
+            <li class="has-submenu">
+            <a href="#">Saas Solutions</a>
+            <ul>
+                <li><a href="#">Saas Marketing</a></li>
+            </ul>
+            </li>
+            <li><a href="{% url 'about_us' %}">About us</a></li>
+            <li><a href="/blog">Blog</a></li>
+        </ul>
+        </div>
+        <a href="{% url 'get_in_touch' %}" class="btn btn-main">Get in Touch</a>
+    </div>
+</div>

@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="author" content="Growth Foundry">
+    <meta name="robots" content="noindex">
+
+    {% block meta %}
+        <title>Digital Marketing Done Right - at Growth Foundry | growthfoundry.com</title>
+        <meta name="description" content="Our teams of experts span from search engine optimization for franchises and enterprises to media buying on Facebook, Google, Youtube & beyond.">
+    {% endblock %}
+
+    <link rel="preload" href="{% static "marketing/fonts/RNSPhysis/RNSPhysis-Black.woff" %}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{% static "marketing/fonts/RNSPhysis/RNSPhysis-Bold.woff" %}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{% static "marketing/fonts/RNSPhysis/RNSPhysis-Light.woff" %}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{% static "marketing/fonts/RNSPhysis/RNSPhysis-Medium.woff" %}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{% static "marketing/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff" %}" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="{% static "marketing/fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff" %}" as="font" type="font/woff" crossorigin>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <link rel="stylesheet" href="{% static "marketing/css/aos.css" %}">
+    <link rel="stylesheet" href="{% static "marketing/css/jquery.fancybox.min.css" %}">
+</head>
+
+<body>
+    <div id="page-wrap">
+
+        {% block body %}{% endblock %}
+
+        {% include 'marketing/includes/footer.html' %}
+
+        {% include 'marketing/includes/footer_menu.html' %}
+    </div>
+
+    <script src="{% static "marketing/js/jquery-3.6.0.min.js" %}"></script>
+    <script src="{% static "marketing/js/aos.js" %}"></script>
+    <script src="{% static "marketing/js/dynamic-adaptiv.js" %}"></script>
+    <script src="{% static "marketing/js/jquery.fancybox.min.js" %}"></script>
+    <script src="{% static "marketing/js/jquery.inputmask.bundle.min.js" %}"></script>
+    <script src="{% static "marketing/js/jquery.viewportchecker.min.js" %}"></script>
+    <script src="{% static "marketing/js/sticky-kit.min.js" %}"></script>
+    <script src="{% static "marketing/js/swiper-bundle.min.js" %}"></script>
+
+    <script>
+      var env = {
+        BLOG_HOST: "{{ BLOG_HOST }}"
+      };
+    </script>
+
+    <script src="{% static 'dist/marketing-bundle.js' %}"></script>
+    <script src="{% static "marketing/js/common.js" %}"></script>
+
+    {% include 'marketing/includes/footer_svg.html' %}
+
+</body>
+</html>

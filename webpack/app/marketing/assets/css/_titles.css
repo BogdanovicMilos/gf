@@ -1,0 +1,34 @@
+.section_title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+  font-family: "RNSPhysis", sans-serif;
+  color: #304f95;
+}
+
+.section_title b,
+.section_title strong {
+  font-weight: 700;
+  color: #304f95;
+}
+
+.section_subtitle {
+  font-family: "RNSPhysis", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.3888888889;
+  color: #304f95;
+}
+
+.page_title {
+  font-size: 32px;
+  font-family: "RNSPhysis", sans-serif;
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.page_title b,
+.page_title strong {
+  font-weight: 900;
+  color: #304f95;
+}

@@ -20,53 +20,53 @@ services:
     depends_on:
       - db
       - redis
-  db:
-    image: postgres:13.0-alpine
-    volumes:
-      - postgres_data:/var/lib/postgresql/data/
-    ports:
-      - 5432:5432
-    environment:
-      - POSTGRES_USER=growth_foundry
-      - POSTGRES_PASSWORD=growth_foundry
-      - POSTGRES_DB=growth_foundry_dev
-  redis:
-    image: redis:5-alpine
-  celery:
-    build:
-      context: ./
-      dockerfile: ./app/Dockerfile
-    entrypoint: /usr/src/app/entrypoint.prod.sh
-    volumes:
-      - ./app/:/usr/src/app/
-    env_file:
-      - ./.env.dev
-    command: celery -A core worker --loglevel=info
-    links:
-      - redis
-  flower:
-    build:
-      context: ./
-      dockerfile: ./app/Dockerfile
-    entrypoint: /usr/src/app/entrypoint.prod.sh
-    ports:
-      - 5555:5555
-    volumes:
-      - ./app/:/usr/src/app/
-    env_file:
-      - ./.env.dev
-    command: celery -A core flower --port=5555 # web UI will be available on http://localhost:5555
-    links:
-      - redis
-      - celery
-  mail-server:
-      image: mailhog/mailhog
-      expose:
-        - 1025
-        - 8025
-      ports:
-        - 8025:8025  #  web UI will be available on http://localhost:8025
-        - 1025:1025
+#  db:
+#    image: postgres:13.0-alpine
+#    volumes:
+#      - postgres_data:/var/lib/postgresql/data/
+#    ports:
+#      - 5432:5432
+#    environment:
+#      - POSTGRES_USER=growth_foundry
+#      - POSTGRES_PASSWORD=growth_foundry
+#      - POSTGRES_DB=growth_foundry_dev
+#  redis:
+#    image: redis:5-alpine
+#  celery:
+#    build:
+#      context: ./
+#      dockerfile: ./app/Dockerfile
+#    entrypoint: /usr/src/app/entrypoint.prod.sh
+#    volumes:
+#      - ./app/:/usr/src/app/
+#    env_file:
+#      - ./.env.dev
+#    command: celery -A core worker --loglevel=info
+#    links:
+#      - redis
+#  flower:
+#    build:
+#      context: ./
+#      dockerfile: ./app/Dockerfile
+#    entrypoint: /usr/src/app/entrypoint.prod.sh
+#    ports:
+#      - 5555:5555
+#    volumes:
+#      - ./app/:/usr/src/app/
+#    env_file:
+#      - ./.env.dev
+#    command: celery -A core flower --port=5555 # web UI will be available on http://localhost:5555
+#    links:
+#      - redis
+#      - celery
+#  mail-server:
+#      image: mailhog/mailhog
+#      expose:
+#        - 1025
+#        - 8025
+#      ports:
+#        - 8025:8025  #  web UI will be available on http://localhost:8025
+#        - 1025:1025
 
 volumes:
   postgres_data:

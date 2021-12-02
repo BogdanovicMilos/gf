@@ -5,7 +5,7 @@ venv
 .idea
 *.sqlite3
 .history
-.env
+.env.dev
 .env.dev
 .env.prod
 .env.prod.db

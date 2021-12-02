@@ -43,15 +43,9 @@ jobs:
       run: |
         docker-compose -f docker-compose.yml build
 
-    - name: Push image
-      uses: docker/build-push-action@v2
-      with:
-        push: true
-        file: ./Dockerfile
-
-#    - name: Push images
-#      run: |
-#        docker push ${{ env.dev.WEB_IMAGE }}
+    - name: Push images
+      run: |
+        docker push $GITHUB_ENV
 
 
 #  deploy:

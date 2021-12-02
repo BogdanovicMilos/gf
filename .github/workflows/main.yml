@@ -15,16 +15,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-
-    - name: Docker meta
-        id: docker_meta
-        uses: crazy-max/ghaction-docker-meta@v1
-        with:
-          images: ghcr.io/gbaeke/rgapi
-          tag-sha: true
-          tag-edge: false
-          tag-latest: true
-
     - name: Add environment variables to .env.dev
       run: |
         echo DEBUG=0 >> .env.dev
@@ -57,7 +47,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ steps.docker_meta.outputs.tags }}
           file: ./Dockerfile
 
 #    - name: Push images

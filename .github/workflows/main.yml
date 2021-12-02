@@ -45,7 +45,7 @@ jobs:
 
     - name: Push images
       run: |
-        docker push ${{ env.dev.WEB_IMAGE }}
+        docker push ghcr.io/$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')/web
 
 
 #  deploy:

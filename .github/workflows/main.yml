@@ -5,8 +5,8 @@ on:
     branches: [ main ]
 
 env:
-  WEB_IMAGE: ghcr.io/$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')/web:latest
-  NGINX_IMAGE: ghcr.io/$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')/nginx:latest
+  WEB_IMAGE: ghcr.io/$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')/web
+  NGINX_IMAGE: ghcr.io/$(echo $GITHUB_REPOSITORY | tr '[:upper:]' '[:lower:]')/nginx
 
 jobs:
 
@@ -18,7 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Add environment variables to .env.dev
       run: |
-        echo DEBUG=0 >> .env
+        echo DEBUG=0 >> .env.dev
         echo SQL_ENGINE=django.db.backends.postgresql >> .env.dev
         echo SECRET_KEY=${{ secrets.SECRET_KEY }} >> .env.dev
         echo POSTGRES_DB=${{ secrets.POSTGRES_DB }} >> .env.dev
@@ -29,8 +29,8 @@ jobs:
 
     - name: Set environment variables
       run: |
-        echo "WEB_IMAGE=$(echo ${{env.WEB_IMAGE}} )" >> $GITHUB_ENV
-        echo "NGINX_IMAGE=$(echo ${{env.NGINX_IMAGE}} )" >> $GITHUB_ENV
+        echo "WEB_IMAGE=$(echo ${{env.dev.WEB_IMAGE}} )" >> $GITHUB_ENV
+        echo "NGINX_IMAGE=$(echo ${{env.dev.NGINX_IMAGE}} )" >> $GITHUB_ENV
 
     - name: Log in to GitHub Packages
       run: echo ${PERSONAL_ACCESS_TOKEN} | docker login ghcr.io -u ${{ secrets.NAMESPACE }} --password-stdin
@@ -39,8 +39,8 @@ jobs:
 
     - name: Pull images
       run: |
-        docker pull ${{ env.WEB_IMAGE }} || true
-        docker pull ${{ env.NGINX_IMAGE }} || true
+        docker pull ${{ env.dev.WEB_IMAGE }} || true
+        docker pull ${{ env.dev.NGINX_IMAGE }} || true
 
     - name: Build images
       run: |
@@ -48,8 +48,8 @@ jobs:
 
     - name: Push images
       run: |
-        docker push ${{ env.WEB_IMAGE }}
-        docker push ${{ env.NGINX_IMAGE }}
+        docker push ${{ env.dev.WEB_IMAGE }}
+        docker push ${{ env.dev.NGINX_IMAGE }}
 
 
 #jobs:

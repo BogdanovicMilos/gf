@@ -11,8 +11,8 @@ jobs:
     name: Build Docker Images
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master
-        uses: actions/checkout@v1
+#      - name: Checkout master
+#        uses: actions/checkout@v1
 
       - name: Add environment variables to .env
         run: |

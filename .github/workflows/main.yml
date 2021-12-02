@@ -49,7 +49,6 @@ jobs:
     - name: Push images
       run: |
         docker push ${{ env.dev.WEB_IMAGE }}
-        docker push ${{ env.dev.NGINX_IMAGE }}
 
 
 #jobs:

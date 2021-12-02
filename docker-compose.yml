@@ -17,9 +17,9 @@ services:
       - 3000:3000
     env_file:
       - ./.env.dev
-    depends_on:
-      - db
-      - redis
+#    depends_on:
+#      - db
+#      - redis
 #  db:
 #    image: postgres:13.0-alpine
 #    volumes:

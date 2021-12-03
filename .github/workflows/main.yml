@@ -45,7 +45,7 @@ jobs:
 
     - name: Push images
       run: |
-        docker push $GITHUB_ENV
+        docker push WEB_IMAGE
 
 
 #  deploy:
